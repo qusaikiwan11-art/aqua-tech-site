@@ -57,6 +57,7 @@
     />
     <link rel="stylesheet" href="./dist/output.css" />
     <link rel="stylesheet" href="./css/aqua-hero-motion.css?v=hp02b" />
+    <link rel="stylesheet" href="./css/aqua-complexity-flow.css?v=hp03c" />
     <style>
       :root {
         --aqua-bg: #051424;
@@ -2083,10 +2084,10 @@
 
           <a
             class="nav-link text-on-surface-variant hover:text-primary transition-colors"
-            href="#results"
-            data-i18n="nav.results"
+            href="#flow"
+            data-i18n="nav.method"
           >
-            النتائج</a
+            منهجنا</a
           >
 
           <a
@@ -2210,10 +2211,10 @@
 
           <a
             class="rounded-lg px-4 py-3 text-on-surface-variant hover:bg-primary/10 hover:text-primary"
-            href="#results"
-            data-i18n="nav.results"
+            href="#flow"
+            data-i18n="nav.method"
           >
-            النتائج</a
+            منهجنا</a
           >
 
           <a
@@ -2439,419 +2440,178 @@
         </div>
       </section>
       <section
-        class="max-w-container-max mx-auto px-margin-mobile md:px-20 py-20"
-      >
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-          <div
-            class="glass-card p-8 rounded-2xl flex flex-col items-center text-center"
-          >
-            <span class="font-headline-xl text-headline-xl text-primary mb-2"
-              >3–5 أيام</span
-            >
-            <p class="font-body-md text-body-md text-on-surface-variant">
-              إطلاق صفحات تسويقية احترافية
-            </p>
+  class="aqua-complexity-flow"
+  id="flow"
+  aria-labelledby="complexityFlowTitle"
+>
+  <span class="aqua-flow-anchor-alias" id="about" aria-hidden="true"></span>
+  <span class="aqua-flow-anchor-alias" id="results" aria-hidden="true"></span>
+  <div class="aqua-complexity-flow__glow" aria-hidden="true"></div>
+
+  <div class="aqua-complexity-flow__container">
+    <header class="aqua-complexity-flow__header">
+      <span class="section-kicker" data-i18n="flow.kicker">
+        منهج Aqua.Tech
+      </span>
+
+      <h2 id="complexityFlowTitle" data-i18n="flow.title">
+        كيف نحوّل التعقيد إلى تدفّق قابل للقياس
+      </h2>
+
+      <p data-i18n="flow.description">
+        Aqua.Tech وكالة برمجية تبني مواقع وأنظمة وأتمتة تبدأ من مشكلة العمل
+        الفعلية، ثم تربط التجربة والبيانات والتنفيذ في مسار واحد قابل للمتابعة
+        والتحسين.
+      </p>
+    </header>
+
+    <div class="aqua-flow-architecture">
+      <article class="aqua-flow-zone aqua-flow-zone--complexity">
+        <header class="aqua-flow-zone__header">
+          <span class="aqua-flow-zone__icon material-symbols-outlined" aria-hidden="true">
+            scatter_plot
+          </span>
+          <div>
+            <span class="aqua-flow-zone__eyebrow" data-i18n="flow.before.kicker">
+              قبل بناء الحل
+            </span>
+            <h3 data-i18n="flow.before.title">تعقيد يستهلك الوقت</h3>
           </div>
-          <div
-            class="glass-card p-8 rounded-2xl flex flex-col items-center text-center"
-          >
-            <span class="font-headline-xl text-headline-xl text-primary mb-2"
-              >24 ساعة</span
-            >
-            <p class="font-body-md text-body-md text-on-surface-variant">
-              خطة واضحة بعد التواصل
-            </p>
+        </header>
+
+        <ul class="aqua-flow-signal-list">
+          <li>
+            <span class="aqua-flow-signal-dot" aria-hidden="true"></span>
+            <span data-i18n="flow.before.item1">طلبات موزعة بين قنوات مختلفة</span>
+          </li>
+          <li>
+            <span class="aqua-flow-signal-dot" aria-hidden="true"></span>
+            <span data-i18n="flow.before.item2">متابعة يدوية تعتمد على التذكّر</span>
+          </li>
+          <li>
+            <span class="aqua-flow-signal-dot" aria-hidden="true"></span>
+            <span data-i18n="flow.before.item3">بيانات منفصلة يصعب الاستفادة منها</span>
+          </li>
+          <li>
+            <span class="aqua-flow-signal-dot" aria-hidden="true"></span>
+            <span data-i18n="flow.before.item4">استجابة بطيئة ونتائج غير واضحة</span>
+          </li>
+        </ul>
+      </article>
+
+      <article class="aqua-flow-zone aqua-flow-zone--engine">
+        <header class="aqua-flow-engine__header">
+          <div>
+            <span class="aqua-flow-zone__eyebrow" data-i18n="flow.engine.kicker">
+              Aqua Flow Method
+            </span>
+            <h3 data-i18n="flow.engine.title">نحوّل المشكلة إلى نظام مترابط</h3>
           </div>
-          <div
-            class="glass-card p-8 rounded-2xl flex flex-col items-center text-center border-primary/40"
-          >
-            <span class="font-headline-xl text-headline-xl text-primary mb-2"
-              >100+</span
-            >
-            <p class="font-body-md text-body-md text-on-surface-variant">
-              مشروع منجز بنجاح
-            </p>
+
+          <span class="aqua-flow-engine__status">
+            <span aria-hidden="true"></span>
+            <span data-i18n="flow.engine.status">مسار واضح</span>
+          </span>
+        </header>
+
+        <ol class="aqua-flow-method">
+          <li>
+            <span class="aqua-flow-method__number">01</span>
+            <div>
+              <h4 data-i18n="flow.step1.title">نفهم</h4>
+              <p data-i18n="flow.step1.desc">نحدد المشكلة والهدف ونقطة الاختناق الفعلية.</p>
+            </div>
+          </li>
+          <li>
+            <span class="aqua-flow-method__number">02</span>
+            <div>
+              <h4 data-i18n="flow.step2.title">نصمّم</h4>
+              <p data-i18n="flow.step2.desc">نرتب الرحلة والبيانات والقرارات ضمن بنية واحدة.</p>
+            </div>
+          </li>
+          <li>
+            <span class="aqua-flow-method__number">03</span>
+            <div>
+              <h4 data-i18n="flow.step3.title">نبني</h4>
+              <p data-i18n="flow.step3.desc">نحوّل البنية إلى موقع أو نظام أو أتمتة قابلة للتوسع.</p>
+            </div>
+          </li>
+          <li>
+            <span class="aqua-flow-method__number">04</span>
+            <div>
+              <h4 data-i18n="flow.step4.title">نقيس ونحسّن</h4>
+              <p data-i18n="flow.step4.desc">نتابع ما يعمل ونطوّر المسار بناءً على النتائج.</p>
+            </div>
+          </li>
+        </ol>
+      </article>
+
+      <article class="aqua-flow-zone aqua-flow-zone--outcome">
+        <header class="aqua-flow-zone__header">
+          <span class="aqua-flow-zone__icon material-symbols-outlined" aria-hidden="true">
+            verified
+          </span>
+          <div>
+            <span class="aqua-flow-zone__eyebrow" data-i18n="flow.after.kicker">
+              الأثر المتوقع
+            </span>
+            <h3 data-i18n="flow.after.title">نتائج نعمل على تحقيقها معك</h3>
           </div>
+        </header>
+
+        <ul class="aqua-flow-outcome-list">
+          <li>
+            <span class="material-symbols-outlined" aria-hidden="true">adjust</span>
+            <div>
+              <strong data-i18n="flow.after.item1.title">تحويل أوضح</strong>
+              <span data-i18n="flow.after.item1.desc">مسار طلب ودعوة واضحة تقللان ضياع الفرص.</span>
+            </div>
+          </li>
+          <li>
+            <span class="material-symbols-outlined" aria-hidden="true">automation</span>
+            <div>
+              <strong data-i18n="flow.after.item2.title">استجابة أسرع</strong>
+              <span data-i18n="flow.after.item2.desc">أتمتة تجمع البيانات وتدعم الرد الأولي المنظم.</span>
+            </div>
+          </li>
+          <li>
+            <span class="material-symbols-outlined" aria-hidden="true">monitoring</span>
+            <div>
+              <strong data-i18n="flow.after.item3.title">تشغيل أكثر وضوحًا</strong>
+              <span data-i18n="flow.after.item3.desc">متابعة وتقارير تمنح الفريق رؤية أدق للعمل.</span>
+            </div>
+          </li>
+        </ul>
+      </article>
+    </div>
+
+    <aside class="aqua-flow-measurement" aria-labelledby="flowMeasurementTitle">
+      <div class="aqua-flow-measurement__heading">
+        <span class="material-symbols-outlined" aria-hidden="true">query_stats</span>
+        <div>
+          <span data-i18n="flow.measurement.kicker">ما نتابعه بعد الإطلاق</span>
+          <strong id="flowMeasurementTitle" data-i18n="flow.measurement.title">
+            مؤشرات مرتبطة بهدف مشروعك، لا أرقام عامة
+          </strong>
+          <small class="aqua-flow-measurement__principle" data-i18n="flow.footer.value">
+            نبدأ من خط أساس حقيقي، ثم نقيس التحسّن ونطوّر المسار بالبيانات.
+          </small>
         </div>
-      </section>
-      <section
-        class="font-arabic py-section-padding bg-surface-container-lowest/60"
-        id="about"
-      >
-        <div class="max-w-container-max mx-auto px-margin-mobile md:px-20">
-          <div
-            class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch"
-          >
-            <div class="lg:col-span-5 glass-card p-10 pb-6 rounded-2xl flex flex-col">
-              <span
-                class="section-kicker font-heading"
-                data-i18n="about.kicker"
-              >
-                About Aqua.Tech
-              </span>
+      </div>
 
-              <h2
-                class="font-headline-lg text-headline-lg md:text-headline-xl mb-6"
-                data-i18n="about.title"
-              >
-                نحوّل التقنية إلى تشغيل أوضح
-              </h2>
+      <ul>
+        <li data-i18n="flow.measurement.item1">اكتمال الطلبات</li>
+        <li data-i18n="flow.measurement.item2">وقت الرد الأولي</li>
+        <li data-i18n="flow.measurement.item3">وضوح المتابعة</li>
+      </ul>
 
-              <p
-                class="font-body-lg text-on-surface-variant leading-relaxed"
-                data-i18n="about.description"
-              >
-                Aqua.Tech وكالة برمجية تبني مواقع، أنظمة، وأتمتة تساعد الشركات
-                ورواد الأعمال على تبسيط العمليات، رفع الكفاءة، وتحويل الحضور
-                الرقمي إلى طلبات منظمة ونتائج قابلة للقياس.
-              </p>
-
-              <div class="hidden lg:block mt-auto pt-8 translate-y-2">
-              <div
-                dir="ltr"
-                aria-hidden="true"
-                style="
-                  width: 82%;
-                  max-width: 390px;
-                  height: 135px;
-                  margin-inline: auto;
-                  border: 1px solid rgba(125, 211, 252, 0.24);
-                  border-radius: 22px;
-                  background:
-                    radial-gradient(
-                      circle at 50% 50%,
-                      rgba(125, 211, 252, 0.16),
-                      transparent 36%
-                    ),
-                    linear-gradient(
-                      135deg,
-                      rgba(125, 211, 252, 0.08),
-                      rgba(15, 23, 42, 0.18)
-                    );
-                  overflow: hidden;
-                  position: relative;
-                  padding: 14px;
-                "
-              >
-                <svg
-                  viewBox="0 0 520 170"
-                  xmlns="http://www.w3.org/2000/svg"
-                  style="width: 100%; height: 100%; display: block"
-                  fill="none"
-                >
-                  <defs>
-                    <radialGradient
-                      id="aquaCenterGlow"
-                      cx="50%"
-                      cy="50%"
-                      r="50%"
-                    >
-                      <stop
-                        offset="0%"
-                        stop-color="#7dd3fc"
-                        stop-opacity="0.32"
-                      />
-                      <stop
-                        offset="100%"
-                        stop-color="#7dd3fc"
-                        stop-opacity="0"
-                      />
-                    </radialGradient>
-
-                    <filter
-                      id="aquaSoftGlow"
-                      x="-50%"
-                      y="-50%"
-                      width="200%"
-                      height="200%"
-                    >
-                      <feGaussianBlur stdDeviation="6" result="blur" />
-                      <feMerge>
-                        <feMergeNode in="blur" />
-                        <feMergeNode in="SourceGraphic" />
-                      </feMerge>
-                    </filter>
-                  </defs>
-
-                  <!-- Background grid -->
-                  <g opacity="0.13">
-                    <path d="M20 42H500" stroke="#7dd3fc" />
-                    <path d="M20 85H500" stroke="#7dd3fc" />
-                    <path d="M20 128H500" stroke="#7dd3fc" />
-                    <path d="M82 15V155" stroke="#7dd3fc" />
-                    <path d="M172 15V155" stroke="#7dd3fc" />
-                    <path d="M260 15V155" stroke="#7dd3fc" />
-                    <path d="M348 15V155" stroke="#7dd3fc" />
-                    <path d="M438 15V155" stroke="#7dd3fc" />
-                  </g>
-
-                  <!-- Connections -->
-                  <g stroke="#7dd3fc" stroke-width="2" stroke-linecap="round">
-                    <!-- top left to center -->
-                    <path d="M174 50 C195 50 205 68 226 75" opacity="0.36" />
-
-                    <!-- top center to right -->
-                    <path d="M294 75 C315 68 325 50 346 50" opacity="0.36" />
-
-                    <!-- bottom left to center -->
-                    <path d="M174 122 C195 122 205 102 226 95" opacity="0.28" />
-
-                    <!-- bottom center to right -->
-                    <path d="M294 95 C315 102 325 122 346 122" opacity="0.28" />
-                  </g>
-
-                  <!-- Center glow -->
-                  <circle cx="260" cy="85" r="62" fill="url(#aquaCenterGlow)" />
-
-                  <!-- Center node -->
-                  <rect
-                    x="226"
-                    y="51"
-                    width="68"
-                    height="68"
-                    rx="22"
-                    fill="#0B1728"
-                    stroke="#7dd3fc"
-                    stroke-opacity="0.5"
-                    filter="url(#aquaSoftGlow)"
-                  />
-
-                  <circle cx="260" cy="85" r="5" fill="#7dd3fc" />
-                  <circle
-                    cx="245"
-                    cy="70"
-                    r="4"
-                    fill="#7dd3fc"
-                    opacity="0.75"
-                  />
-                  <circle
-                    cx="275"
-                    cy="70"
-                    r="4"
-                    fill="#7dd3fc"
-                    opacity="0.75"
-                  />
-                  <circle
-                    cx="245"
-                    cy="100"
-                    r="4"
-                    fill="#7dd3fc"
-                    opacity="0.75"
-                  />
-                  <circle
-                    cx="275"
-                    cy="100"
-                    r="4"
-                    fill="#7dd3fc"
-                    opacity="0.75"
-                  />
-                  <path
-                    d="M260 85L245 70M260 85L275 70M260 85L245 100M260 85L275 100"
-                    stroke="#7dd3fc"
-                    stroke-opacity="0.7"
-                    stroke-width="2"
-                  />
-
-                  <!-- Outer nodes -->
-                  <g>
-                    <rect
-                      x="86"
-                      y="28"
-                      width="88"
-                      height="44"
-                      rx="15"
-                      fill="rgba(15, 30, 48, 0.82)"
-                      stroke="#7dd3fc"
-                      stroke-opacity="0.32"
-                    />
-                    <path
-                      d="M119 51L110 42L119 33"
-                      stroke="#7dd3fc"
-                      stroke-width="4"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M141 33L150 42L141 51"
-                      stroke="#7dd3fc"
-                      stroke-width="4"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-
-                  <g>
-                    <rect
-                      x="346"
-                      y="28"
-                      width="88"
-                      height="44"
-                      rx="15"
-                      fill="rgba(15, 30, 48, 0.82)"
-                      stroke="#7dd3fc"
-                      stroke-opacity="0.32"
-                    />
-                    <circle
-                      cx="390"
-                      cy="50"
-                      r="11"
-                      stroke="#7dd3fc"
-                      stroke-width="3"
-                    />
-                    <path
-                      d="M390 39V32M390 68V61M379 50H372M408 50H401"
-                      stroke="#7dd3fc"
-                      stroke-width="3"
-                      stroke-linecap="round"
-                    />
-                  </g>
-
-                  <g>
-                    <rect
-                      x="86"
-                      y="100"
-                      width="88"
-                      height="44"
-                      rx="15"
-                      fill="rgba(15, 30, 48, 0.82)"
-                      stroke="#7dd3fc"
-                      stroke-opacity="0.32"
-                    />
-                    <path
-                      d="M114 128L128 114L138 124L151 109"
-                      stroke="#7dd3fc"
-                      stroke-width="4"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M151 109V123M151 109H137"
-                      stroke="#7dd3fc"
-                      stroke-width="4"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-
-                  <g>
-                    <rect
-                      x="346"
-                      y="100"
-                      width="88"
-                      height="44"
-                      rx="15"
-                      fill="rgba(15, 30, 48, 0.82)"
-                      stroke="#7dd3fc"
-                      stroke-opacity="0.32"
-                    />
-                    <path
-                      d="M390 112C400 122 400 132 390 140C380 132 380 122 390 112Z"
-                      stroke="#7dd3fc"
-                      stroke-width="3"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M390 112V140"
-                      stroke="#7dd3fc"
-                      stroke-width="3"
-                      stroke-linecap="round"
-                    />
-                  </g>
-                </svg>
-              </div>
-            </div>
-            </div>
-
-            <div
-              class="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-gutter"
-            >
-              <div class="glass-card p-8 rounded-2xl">
-                <div class="aqua-icon-box mb-6">
-                  <span class="material-symbols-outlined">route</span>
-                </div>
-
-                <h3
-                  class="font-headline-md text-headline-md mb-3"
-                  data-i18n="about.card1.title"
-                >
-                  نفهم الهدف
-                </h3>
-
-                <p
-                  class="text-on-surface-variant leading-relaxed"
-                  data-i18n="about.card1.desc"
-                >
-                  نبدأ من المشكلة الفعلية، الجمهور، وطريقة استقبال الطلبات قبل
-                  أي تصميم أو برمجة.
-                </p>
-              </div>
-
-              <div class="glass-card p-8 rounded-2xl">
-                <div class="aqua-icon-box mb-6">
-                  <span class="material-symbols-outlined">account_tree</span>
-                </div>
-
-                <h3
-                  class="font-headline-md text-headline-md mb-3"
-                  data-i18n="about.card2.title"
-                >
-                  نبني المسار
-                </h3>
-
-                <p
-                  class="text-on-surface-variant leading-relaxed"
-                  data-i18n="about.card2.desc"
-                >
-                  نحوّل الفكرة إلى صفحة، نظام، أو أتمتة لها خطوات واضحة ونتيجة
-                  قابلة للتنفيذ.
-                </p>
-              </div>
-
-              <div class="glass-card p-8 rounded-2xl">
-                <div class="aqua-icon-box mb-6">
-                  <span class="material-symbols-outlined">rocket_launch</span>
-                </div>
-
-                <h3
-                  class="font-headline-md text-headline-md mb-3"
-                  data-i18n="about.card3.title"
-                >
-                  نطلق بثقة
-                </h3>
-
-                <p
-                  class="text-on-surface-variant leading-relaxed"
-                  data-i18n="about.card3.desc"
-                >
-                  نجهز المشروع للإطلاق مع أساسيات الأداء، التتبع، الأمان، وتجربة
-                  المستخدم.
-                </p>
-              </div>
-
-              <div class="glass-card p-8 rounded-2xl">
-                <div class="aqua-icon-box mb-6">
-                  <span class="material-symbols-outlined">monitoring</span>
-                </div>
-
-                <h3
-                  class="font-headline-md text-headline-md mb-3"
-                  data-i18n="about.card4.title"
-                >
-                  نحسّن بعد الإطلاق
-                </h3>
-
-                <p
-                  class="text-on-surface-variant leading-relaxed"
-                  data-i18n="about.card4.desc"
-                >
-                  نتابع النتائج والملاحظات لنطوّر الحل بدل أن يبقى مجرد نسخة
-                  أولى.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <a class="aqua-complexity-flow__cta" href="#services">
+        <span class="material-symbols-outlined" aria-hidden="true">grid_view</span>
+        <span data-i18n="flow.cta">استكشف ما نبنيه</span>
+      </a>
+    </aside>
+  </div>
+</section>
 
       <section class="py-16 bg-surface-container-lowest/60" id="trust">
         <div class="max-w-container-max mx-auto px-margin-mobile md:px-20">
@@ -3485,186 +3245,6 @@
           </div>
         </div>
       </section>
-      <section
-        class="py-section-padding bg-surface-container-lowest"
-        id="results"
-      >
-        <div class="max-w-container-max mx-auto px-margin-mobile md:px-20">
-          <div
-            class="grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center"
-          >
-            <div>
-              <span class="section-kicker" data-i18n="results.kicker">
-                Proven results</span
-              >
-
-              <h2
-                class="font-headline-lg text-headline-lg md:text-headline-xl mb-8"
-                data-i18n="results.title"
-              >
-                Results we can achieve with you
-              </h2>
-
-              <div class="space-y-8">
-                <div class="flex gap-6 group">
-                  <div
-                    class="w-12 h-12 shrink-0 rounded-full bg-primary/10 flex items-center justify-center text-primary border border-primary/20 group-hover:scale-110 transition-transform"
-                  >
-                    <span class="material-symbols-outlined">trending_up</span>
-                  </div>
-
-                  <div>
-                    <h3
-                      class="font-headline-md text-headline-md mb-2"
-                      data-i18n="results.item1.title"
-                    >
-                      Clearer conversion
-                    </h3>
-
-                    <p
-                      class="font-body-md text-on-surface-variant"
-                      data-i18n="results.item1.desc"
-                    >
-                      Professional landing pages with clear CTAs to increase
-                      inquiries and reduce visitor drop-off.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="flex gap-6 group">
-                  <div
-                    class="w-12 h-12 shrink-0 rounded-full bg-primary/10 flex items-center justify-center text-primary border border-primary/20 group-hover:scale-110 transition-transform"
-                  >
-                    <span class="material-symbols-outlined">bolt</span>
-                  </div>
-
-                  <div>
-                    <h3
-                      class="font-headline-md text-headline-md mb-2"
-                      data-i18n="results.item2.title"
-                    >
-                      Reduced response time
-                    </h3>
-
-                    <p
-                      class="font-body-md text-on-surface-variant"
-                      data-i18n="results.item2.desc"
-                    >
-                      Automation or a chatbot that helps you respond within
-                      minutes instead of hours, while collecting data in an
-                      organized way.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="flex gap-6 group">
-                  <div
-                    class="w-12 h-12 shrink-0 rounded-full bg-primary/10 flex items-center justify-center text-primary border border-primary/20 group-hover:scale-110 transition-transform"
-                  >
-                    <span class="material-symbols-outlined">dashboard</span>
-                  </div>
-
-                  <div>
-                    <h3
-                      class="font-headline-md text-headline-md mb-2"
-                      data-i18n="results.item3.title"
-                    >
-                      Clearer operations, less time
-                    </h3>
-
-                    <p
-                      class="font-body-md text-on-surface-variant"
-                      data-i18n="results.item3.desc"
-                    >
-                      A custom system or dashboard that helps organize requests,
-                      follow-ups, and accurate reports.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="relative">
-              <div
-                class="absolute -inset-4 bg-primary/20 blur-3xl rounded-full"
-              ></div>
-
-              <div
-                class="glass-card rounded-3xl p-8 relative z-10 overflow-hidden min-h-[420px]"
-              >
-                <div class="grid grid-cols-2 gap-4 h-full">
-                  <div class="glass-card rounded-xl p-5">
-                    <span class="material-symbols-outlined text-primary mb-6">
-                      query_stats</span
-                    >
-
-                    <div class="text-4xl font-bold text-primary mb-2">+42%</div>
-
-                    <p
-                      class="text-sm text-on-surface-variant"
-                      data-i18n="results.metric1.label"
-                    >
-                      Improvement in request intake
-                    </p>
-                  </div>
-
-                  <div class="glass-card rounded-xl p-5 mt-10">
-                    <span class="material-symbols-outlined text-primary mb-6">
-                      timer</span
-                    >
-
-                    <div class="text-4xl font-bold text-primary mb-2">-60%</div>
-
-                    <p
-                      class="text-sm text-on-surface-variant"
-                      data-i18n="results.metric2.label"
-                    >
-                      Reduction in first response time
-                    </p>
-                  </div>
-
-                  <div class="col-span-2 glass-card rounded-xl p-5">
-                    <div class="flex items-center justify-between mb-5">
-                      <span
-                        class="font-label-sm text-primary"
-                        data-i18n="results.panel.title"
-                      >
-                        Operational clarity</span
-                      >
-
-                      <span class="material-symbols-outlined text-primary">
-                        analytics</span
-                      >
-                    </div>
-
-                    <div
-                      class="h-3 rounded-full bg-surface-container-high overflow-hidden mb-3"
-                    >
-                      <div class="h-full w-[82%] bg-primary rounded-full"></div>
-                    </div>
-
-                    <div
-                      class="h-3 rounded-full bg-surface-container-high overflow-hidden mb-3"
-                    >
-                      <div
-                        class="h-full w-[64%] bg-primary/70 rounded-full"
-                      ></div>
-                    </div>
-
-                    <div
-                      class="h-3 rounded-full bg-surface-container-high overflow-hidden"
-                    >
-                      <div
-                        class="h-full w-[92%] bg-primary/50 rounded-full"
-                      ></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section class="py-16 bg-surface-container-low/30" id="offers">
         <div class="max-w-container-max mx-auto px-margin-mobile md:px-20">
@@ -4032,7 +3612,7 @@
             </article>
           </div>
 
-          
+
       </section>
       <section class="py-section-padding" id="security">
         <div class="max-w-container-max mx-auto px-margin-mobile md:px-20">
@@ -5379,10 +4959,10 @@
                 <li>
                   <a
                     class="hover:text-primary transition-colors"
-                    href="#about"
-                    data-i18n="footer.about"
+                    href="#flow"
+                    data-i18n="footer.method"
                   >
-                    من نحن</a
+                    منهجنا</a
                   >
                 </li>
                 <li>
@@ -5392,15 +4972,6 @@
                     data-i18n="footer.why"
                   >
                     لماذا نحن</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="hover:text-primary transition-colors"
-                    href="#results"
-                    data-i18n="footer.results"
-                  >
-                    النتائج</a
                   >
                 </li>
                 <li>

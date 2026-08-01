@@ -1,0 +1,17 @@
+Aqua.Tech Homepage HP-03C — Unified Flow Visual Polish
+Base commit: 9e24ae4b64cd083e5f25816e735e8843714d2bbf feat: polish interactive hero experience
+Source snapshot SHA256: 2c1a118c4913638d76b6ea35fae62311c1fec9331b093db4b4a7525339080367
+
+css/aqua-complexity-flow.css
+dist/output.css
+js/site-i18n.js
+src/partials/head.html
+src/partials/header.html
+src/partials/overview.html
+src/partials/about.html
+src/partials/results.html
+src/partials/footer.html
+src/template.html
+index.html
+docs/BATCH_HP_03_COMPLEXITY_TO_FLOW.md
+HP03_MANIFEST.txt
