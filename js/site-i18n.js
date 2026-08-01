@@ -269,13 +269,18 @@
 
   const DATA_I18N = {
     ar: {
-      "hero.kicker": "برمجة • إطلاق • توسّع",
-      "hero.title": "حلول رقمية ونمو فعلي",
-      "hero.titleAccent": "من الانطلاقة إلى التوسع",
+      "hero.kicker": "Software • Automation • AI",
+      "hero.title": "نحوّل التعقيد",
+      "hero.titleAccent": "إلى تدفّق.",
       "hero.subtitle":
-        "نبني مواقع وأنظمة تركّز على جذب العملاء، استقبال الطلبات، والتعامل مع أول رد من خلال مسار واضح وقابل للتنفيذ.",
+        "نبني مواقع وأنظمة وأتمتة ذكية تربط عملياتك وعملاءك ونموك ضمن تدفّق رقمي واحد واضح وقابل للتوسّع.",
       "hero.ctaPrimary": "ابدأ مشروعك",
-      "hero.ctaSecondary": "استعرض الحلول",
+      "hero.ctaSecondary": "استكشف كيف نعمل",
+      "hero.proof1": "مواقع ومنصات",
+      "hero.proof2": "أنظمة مخصصة",
+      "hero.proof3": "أتمتة وذكاء اصطناعي",
+      "hero.runtimeLabel": "Aqua Flow Engine",
+      "hero.runtimeMeta": "مترابط • مؤتمت • قابل للقياس",
       "about.kicker": "About Aqua.Tech",
       "about.title": "نحوّل التقنية إلى تشغيل أوضح",
       "about.description":
@@ -747,13 +752,18 @@
     },
 
     en: {
-      "hero.kicker": "Growth • Software • AI",
-      "hero.title": "Digital solutions and real growth",
-      "hero.titleAccent": "From launch to scale",
+      "hero.kicker": "Software • Automation • AI",
+      "hero.title": "We turn complexity",
+      "hero.titleAccent": "into flow.",
       "hero.subtitle":
-        "We build websites and systems focused on attracting leads, receiving requests, and handling the first response through a clear, executable flow.",
+        "We build websites, systems, and intelligent automation that connect your operations, customers, and growth in one clear, scalable digital flow.",
       "hero.ctaPrimary": "Start your project",
-      "hero.ctaSecondary": "View solutions",
+      "hero.ctaSecondary": "Explore how we work",
+      "hero.proof1": "Websites and platforms",
+      "hero.proof2": "Custom systems",
+      "hero.proof3": "Automation and AI",
+      "hero.runtimeLabel": "Aqua Flow Engine",
+      "hero.runtimeMeta": "Connected • Automated • Measurable",
 
       "about.kicker": "About Aqua.Tech",
       "about.title": "We turn technology into clearer operations",

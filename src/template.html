@@ -1380,6 +1380,649 @@
         }
       }
     </style>
+
+    <style id="aqua-signature-hero-styles">
+      .aqua-signature-hero {
+        position: relative;
+        isolation: isolate;
+        min-height: 100svh;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        padding: 7.6rem 1.25rem 2rem;
+        border-bottom: 1px solid rgba(137, 206, 255, 0.08);
+      }
+
+      .aqua-signature-hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -4;
+        background:
+          radial-gradient(circle at 72% 32%, rgba(0, 180, 255, 0.15), transparent 28%),
+          radial-gradient(circle at 21% 63%, rgba(137, 206, 255, 0.09), transparent 26%),
+          linear-gradient(180deg, rgba(5, 20, 36, 0.18), rgba(1, 9, 21, 0.5));
+      }
+
+      .aqua-hero-grid {
+        position: absolute;
+        inset: 0;
+        z-index: -3;
+        pointer-events: none;
+        opacity: 0.34;
+        background-image:
+          linear-gradient(to right, rgba(137, 206, 255, 0.055) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(137, 206, 255, 0.045) 1px, transparent 1px);
+        background-size: 72px 72px;
+        -webkit-mask-image: radial-gradient(ellipse at 50% 44%, #000 0%, rgba(0, 0, 0, 0.72) 42%, transparent 78%);
+        mask-image: radial-gradient(ellipse at 50% 44%, #000 0%, rgba(0, 0, 0, 0.72) 42%, transparent 78%);
+      }
+
+      .aqua-hero-aura {
+        position: absolute;
+        z-index: -2;
+        border-radius: 999px;
+        pointer-events: none;
+        filter: blur(18px);
+      }
+
+      .aqua-hero-aura-one {
+        width: min(42vw, 620px);
+        aspect-ratio: 1;
+        inset-inline-start: -12vw;
+        top: 18%;
+        background: radial-gradient(circle, rgba(137, 206, 255, 0.12), transparent 68%);
+      }
+
+      .aqua-hero-aura-two {
+        width: min(36vw, 520px);
+        aspect-ratio: 1;
+        inset-inline-end: -8vw;
+        bottom: -16%;
+        background: radial-gradient(circle, rgba(0, 180, 255, 0.14), transparent 68%);
+      }
+
+      .aqua-hero-flow-map {
+        position: absolute;
+        inset: 9% -2% auto;
+        width: 104%;
+        height: 84%;
+        z-index: -1;
+        pointer-events: none;
+        opacity: 0.92;
+      }
+
+      .aqua-hero-flow-path {
+        fill: none;
+        stroke: url(#aquaHeroFlowGradient);
+        stroke-width: 1.2;
+        vector-effect: non-scaling-stroke;
+      }
+
+      .aqua-hero-flow-path-soft {
+        opacity: 0.4;
+        stroke-width: 0.7;
+      }
+
+      .aqua-flow-node {
+        fill: #89ceff;
+        opacity: 0.66;
+        filter: drop-shadow(0 0 7px rgba(137, 206, 255, 0.8));
+      }
+
+      .aqua-hero-shell {
+        width: min(1320px, 100%);
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: minmax(0, 1.02fr) minmax(420px, 0.98fr);
+        align-items: center;
+        direction: ltr;
+        gap: clamp(3rem, 6vw, 6.5rem);
+      }
+
+      .aqua-hero-copy {
+        max-width: 650px;
+        position: relative;
+        z-index: 2;
+      }
+
+      html[dir="rtl"] .aqua-hero-copy {
+        grid-column: 2;
+        grid-row: 1;
+        direction: rtl;
+        text-align: right;
+      }
+
+      html[dir="rtl"] .aqua-hero-runtime {
+        grid-column: 1;
+        grid-row: 1;
+      }
+
+      html[dir="ltr"] .aqua-hero-copy {
+        grid-column: 1;
+        grid-row: 1;
+        direction: ltr;
+        text-align: left;
+      }
+
+      html[dir="ltr"] .aqua-hero-runtime {
+        grid-column: 2;
+        grid-row: 1;
+      }
+
+      .aqua-hero-kicker {
+        width: fit-content;
+        min-height: 2.25rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.7rem;
+        margin-bottom: 1.25rem;
+        padding: 0.52rem 0.9rem;
+        border: 1px solid rgba(137, 206, 255, 0.2);
+        border-radius: 999px;
+        background: linear-gradient(135deg, rgba(137, 206, 255, 0.09), rgba(0, 180, 255, 0.025));
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+        color: var(--aqua-primary);
+        font-family: "JetBrains Mono", monospace;
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        direction: ltr;
+      }
+
+      .aqua-hero-status-dot {
+        width: 0.46rem;
+        height: 0.46rem;
+        border-radius: 999px;
+        background: #55e6ae;
+        box-shadow: 0 0 0 4px rgba(85, 230, 174, 0.08), 0 0 12px rgba(85, 230, 174, 0.58);
+      }
+
+      .aqua-hero-title {
+        margin: 0;
+        color: #edf6ff;
+        font-family: "Space Grotesk", "Alexandria", system-ui, sans-serif;
+        font-size: clamp(3.35rem, 5.25vw, 5.55rem);
+        font-weight: 800;
+        line-height: 0.98;
+        letter-spacing: -0.055em;
+        text-wrap: balance;
+      }
+
+      html[dir="rtl"] .aqua-hero-title {
+        letter-spacing: 0;
+        line-height: 1.14;
+      }
+
+      .aqua-hero-title > span {
+        display: block;
+      }
+
+      .aqua-hero-title-accent {
+        margin-top: 0.12em;
+        color: transparent;
+        background: linear-gradient(92deg, #d8efff 0%, #89ceff 44%, #00b4ff 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        text-shadow: 0 0 34px rgba(0, 180, 255, 0.16);
+      }
+
+      .aqua-hero-subtitle {
+        max-width: 610px;
+        margin: 1.4rem 0 0;
+        color: rgba(212, 228, 250, 0.74);
+        font-size: clamp(1.02rem, 1.3vw, 1.18rem);
+        line-height: 1.75;
+      }
+
+      html[dir="rtl"] .aqua-hero-subtitle {
+        line-height: 1.9;
+      }
+
+      .aqua-hero-actions {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.9rem;
+        margin-top: 1.8rem;
+      }
+
+      .aqua-hero-btn {
+        min-height: 3.25rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.9rem 1.45rem;
+        border-radius: 0.9rem;
+        border: 1px solid transparent;
+        font-weight: 800;
+        text-decoration: none;
+        transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, box-shadow 180ms ease, color 180ms ease;
+      }
+
+      .aqua-hero-btn:hover {
+        transform: translateY(-2px);
+      }
+
+      .aqua-hero-btn-primary {
+        color: #001e2f;
+        background: linear-gradient(135deg, #a4dcff 0%, #57c8ff 48%, #00b4ff 100%);
+        border-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 16px 36px rgba(0, 180, 255, 0.2), 0 0 24px rgba(137, 206, 255, 0.12);
+      }
+
+      .aqua-hero-btn-primary:hover {
+        box-shadow: 0 20px 44px rgba(0, 180, 255, 0.27), 0 0 30px rgba(137, 206, 255, 0.15);
+      }
+
+      .aqua-hero-btn-secondary {
+        color: #d4e4fa;
+        background: rgba(7, 24, 41, 0.54);
+        border-color: rgba(137, 206, 255, 0.22);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+      }
+
+      .aqua-hero-btn-secondary:hover {
+        color: #a9ddff;
+        background: rgba(137, 206, 255, 0.075);
+        border-color: rgba(137, 206, 255, 0.4);
+      }
+
+      .aqua-hero-proof {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.7rem 1.2rem;
+        margin-top: 1.45rem;
+        padding-top: 1rem;
+        border-top: 1px solid rgba(137, 206, 255, 0.1);
+        color: rgba(189, 200, 210, 0.68);
+        font-size: 0.78rem;
+        font-weight: 600;
+      }
+
+      .aqua-hero-proof span {
+        position: relative;
+        padding-inline-start: 0.85rem;
+      }
+
+      .aqua-hero-proof span::before {
+        content: "";
+        position: absolute;
+        inset-inline-start: 0;
+        top: 50%;
+        width: 0.3rem;
+        height: 0.3rem;
+        border-radius: 999px;
+        background: rgba(137, 206, 255, 0.72);
+        transform: translateY(-50%);
+        box-shadow: 0 0 8px rgba(137, 206, 255, 0.36);
+      }
+
+      .aqua-hero-runtime {
+        width: min(100%, 560px);
+        position: relative;
+        justify-self: center;
+        z-index: 2;
+        direction: ltr;
+      }
+
+      .aqua-runtime-glow {
+        position: absolute;
+        inset: 12% 8% -7%;
+        z-index: -1;
+        border-radius: 2rem;
+        background: radial-gradient(circle at 50% 50%, rgba(0, 180, 255, 0.2), transparent 67%);
+        filter: blur(30px);
+        opacity: 0.72;
+      }
+
+      .aqua-runtime-window {
+        position: relative;
+        overflow: hidden;
+        border: 1px solid rgba(137, 206, 255, 0.23);
+        border-radius: 1.25rem;
+        background:
+          radial-gradient(circle at 82% 2%, rgba(0, 180, 255, 0.11), transparent 28%),
+          linear-gradient(180deg, rgba(9, 27, 46, 0.94), rgba(2, 14, 27, 0.97));
+        box-shadow:
+          inset 0 1px 0 rgba(255, 255, 255, 0.055),
+          0 34px 90px rgba(0, 0, 0, 0.42),
+          0 0 50px rgba(0, 180, 255, 0.08);
+      }
+
+      .aqua-runtime-window::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        background: linear-gradient(112deg, rgba(255, 255, 255, 0.055), transparent 23%, transparent 72%, rgba(137, 206, 255, 0.04));
+      }
+
+      .aqua-runtime-topbar {
+        min-height: 3.2rem;
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+        gap: 1rem;
+        padding: 0.78rem 1rem;
+        border-bottom: 1px solid rgba(137, 206, 255, 0.1);
+        background: rgba(14, 34, 53, 0.62);
+        font-family: "JetBrains Mono", monospace;
+        font-size: 0.68rem;
+      }
+
+      .aqua-runtime-dots {
+        display: flex;
+        align-items: center;
+        gap: 0.42rem;
+      }
+
+      .aqua-runtime-dots span {
+        width: 0.56rem;
+        height: 0.56rem;
+        border-radius: 999px;
+        background: rgba(137, 206, 255, 0.24);
+      }
+
+      .aqua-runtime-dots span:first-child { background: rgba(255, 110, 110, 0.72); }
+      .aqua-runtime-dots span:nth-child(2) { background: rgba(255, 206, 97, 0.72); }
+      .aqua-runtime-dots span:nth-child(3) { background: rgba(85, 230, 174, 0.72); }
+
+      .aqua-runtime-title {
+        color: rgba(212, 228, 250, 0.68);
+        text-align: center;
+      }
+
+      .aqua-runtime-secure {
+        justify-self: end;
+        color: rgba(85, 230, 174, 0.78);
+      }
+
+      .aqua-runtime-body {
+        padding: clamp(1.25rem, 2.6vw, 1.8rem);
+        font-family: "JetBrains Mono", monospace;
+      }
+
+      .aqua-runtime-command {
+        display: flex;
+        align-items: center;
+        gap: 0.7rem;
+        color: rgba(212, 228, 250, 0.92);
+        font-size: clamp(0.76rem, 1vw, 0.88rem);
+      }
+
+      .aqua-runtime-prompt {
+        color: #89ceff;
+        text-shadow: 0 0 12px rgba(137, 206, 255, 0.46);
+      }
+
+      .aqua-flow-stack {
+        position: relative;
+        margin: 1.35rem 0 1.25rem;
+        padding: 0;
+        list-style: none;
+      }
+
+      .aqua-flow-stack::before {
+        content: "";
+        position: absolute;
+        left: 1.02rem;
+        top: 1.65rem;
+        bottom: 1.65rem;
+        width: 1px;
+        background: linear-gradient(180deg, rgba(137, 206, 255, 0.1), rgba(0, 180, 255, 0.6), rgba(137, 206, 255, 0.12));
+        box-shadow: 0 0 10px rgba(0, 180, 255, 0.2);
+      }
+
+      .aqua-flow-stack li {
+        position: relative;
+        display: grid;
+        grid-template-columns: 2.05rem minmax(0, 1fr) auto;
+        align-items: center;
+        gap: 0.8rem;
+        min-height: 2.9rem;
+        padding: 0.35rem 0.72rem 0.35rem 0;
+        border-bottom: 1px solid rgba(137, 206, 255, 0.07);
+        color: rgba(212, 228, 250, 0.76);
+        font-size: clamp(0.7rem, 0.92vw, 0.82rem);
+      }
+
+      .aqua-flow-stack li:last-child {
+        border-bottom: 0;
+      }
+
+      .aqua-flow-index {
+        position: relative;
+        z-index: 1;
+        width: 2.05rem;
+        height: 2.05rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(137, 206, 255, 0.22);
+        border-radius: 0.62rem;
+        color: #89ceff;
+        background: #071a2d;
+        box-shadow: 0 0 0 4px rgba(5, 20, 36, 0.7);
+      }
+
+      .aqua-flow-command {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .aqua-flow-state {
+        color: rgba(85, 230, 174, 0.86);
+        font-size: 0.67rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .aqua-runtime-status {
+        min-height: 2.75rem;
+        display: grid;
+        grid-template-columns: auto auto 1fr;
+        align-items: center;
+        gap: 0.65rem;
+        padding: 0.72rem 0.85rem;
+        border: 1px solid rgba(85, 230, 174, 0.17);
+        border-radius: 0.82rem;
+        background: rgba(85, 230, 174, 0.045);
+        color: rgba(85, 230, 174, 0.92);
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+      }
+
+      .aqua-runtime-status-light {
+        width: 0.48rem;
+        height: 0.48rem;
+        border-radius: 999px;
+        background: #55e6ae;
+        box-shadow: 0 0 12px rgba(85, 230, 174, 0.7);
+      }
+
+      .aqua-runtime-status-meta {
+        justify-self: end;
+        color: rgba(189, 200, 210, 0.48);
+        font-size: 0.62rem;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+      }
+
+      .aqua-runtime-caption {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-top: 0.95rem;
+        padding: 0 0.2rem;
+        color: rgba(212, 228, 250, 0.52);
+        font-size: 0.7rem;
+        font-weight: 600;
+      }
+
+      .aqua-runtime-caption span:first-child {
+        color: rgba(137, 206, 255, 0.86);
+        font-family: "JetBrains Mono", monospace;
+      }
+
+      @media (max-width: 1120px) {
+        .aqua-hero-shell {
+          grid-template-columns: minmax(0, 1fr) minmax(390px, 0.9fr);
+          gap: 2.6rem;
+        }
+
+        .aqua-hero-title {
+          font-size: clamp(3.05rem, 5vw, 4.6rem);
+        }
+      }
+
+      @media (max-width: 920px) {
+        .aqua-signature-hero {
+          min-height: auto;
+          padding: 7.4rem 1rem 4.5rem;
+        }
+
+        .aqua-hero-shell {
+          grid-template-columns: 1fr;
+          gap: 3.4rem;
+        }
+
+        html[dir="rtl"] .aqua-hero-copy,
+        html[dir="rtl"] .aqua-hero-runtime,
+        html[dir="ltr"] .aqua-hero-copy,
+        html[dir="ltr"] .aqua-hero-runtime {
+          grid-column: 1;
+          grid-row: auto;
+        }
+
+        .aqua-hero-copy {
+          max-width: 720px;
+          margin: 0 auto;
+          text-align: center !important;
+        }
+
+        .aqua-hero-kicker {
+          margin-inline: auto;
+        }
+
+        .aqua-hero-subtitle {
+          margin-inline: auto;
+        }
+
+        .aqua-hero-actions,
+        .aqua-hero-proof {
+          justify-content: center;
+        }
+
+        .aqua-hero-runtime {
+          width: min(100%, 620px);
+        }
+      }
+
+      @media (max-width: 560px) {
+        .aqua-signature-hero {
+          padding-top: 6.6rem;
+        }
+
+        .aqua-hero-title {
+          font-size: clamp(2.55rem, 13.4vw, 3.75rem);
+        }
+
+        .aqua-hero-actions {
+          align-items: stretch;
+          flex-direction: column;
+        }
+
+        .aqua-hero-btn {
+          width: 100%;
+        }
+
+        .aqua-hero-proof {
+          display: grid;
+          grid-template-columns: 1fr;
+          justify-items: start;
+          width: fit-content;
+          margin-inline: auto;
+          text-align: start;
+        }
+
+        .aqua-runtime-topbar {
+          grid-template-columns: 1fr auto;
+        }
+
+        .aqua-runtime-title {
+          display: none;
+        }
+
+        .aqua-flow-stack li {
+          grid-template-columns: 2.05rem minmax(0, 1fr);
+        }
+
+        .aqua-flow-state {
+          display: none;
+        }
+
+        .aqua-runtime-status-meta {
+          display: none;
+        }
+
+        .aqua-runtime-status {
+          grid-template-columns: auto 1fr;
+        }
+
+        .aqua-runtime-caption {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+
+      @media (min-width: 921px) and (max-height: 820px) {
+        .aqua-signature-hero {
+          padding-top: 6.8rem;
+          padding-bottom: 1.15rem;
+        }
+
+        .aqua-hero-title {
+          font-size: clamp(2.9rem, 4.65vw, 4.55rem);
+        }
+
+        .aqua-hero-subtitle {
+          margin-top: 1rem;
+          line-height: 1.62;
+        }
+
+        .aqua-hero-actions {
+          margin-top: 1.25rem;
+        }
+
+        .aqua-hero-proof {
+          margin-top: 1rem;
+          padding-top: 0.8rem;
+        }
+
+        .aqua-runtime-body {
+          padding: 1.15rem 1.4rem;
+        }
+
+        .aqua-flow-stack {
+          margin: 0.9rem 0;
+        }
+
+        .aqua-flow-stack li {
+          min-height: 2.5rem;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .aqua-hero-btn {
+          transition: none;
+        }
+      }
+    </style>
   </head>
   <body class="dark bg-background text-on-background selection:bg-primary/30">
     <!-- AquaTech background animation layer -->
@@ -1644,98 +2287,143 @@
     </div>
 
     <!-- Top Navigation Bar -->
-    <main class="pt-32" id="top">
+    <main id="top">
       <section
-        class="relative min-h-[921px] flex items-center justify-center py-section-padding px-margin-mobile overflow-hidden"
+        class="aqua-signature-hero"
+        aria-labelledby="hero-title"
       >
-        <div class="aqua-liquid-bg" aria-hidden="true"></div>
-        <div class="circuit-layer" aria-hidden="true"></div>
-        <span class="code-chip top-[22%] right-[12%] text-5xl">&lt;/&gt;</span>
-        <span class="code-chip top-[70%] left-[12%] text-sm">function()</span>
-        <span class="code-chip top-[32%] left-[18%] text-xs">0101 0010</span>
-        <span class="code-chip bottom-[18%] right-[20%] text-xs"
-          >API • SQL • AI</span
+        <div class="aqua-hero-grid" aria-hidden="true"></div>
+        <div class="aqua-hero-aura aqua-hero-aura-one" aria-hidden="true"></div>
+        <div class="aqua-hero-aura aqua-hero-aura-two" aria-hidden="true"></div>
+
+        <svg
+          class="aqua-hero-flow-map"
+          viewBox="0 0 1440 760"
+          preserveAspectRatio="none"
+          aria-hidden="true"
         >
+          <defs>
+            <linearGradient id="aquaHeroFlowGradient" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#89ceff" stop-opacity="0" />
+              <stop offset="42%" stop-color="#89ceff" stop-opacity="0.36" />
+              <stop offset="72%" stop-color="#00b4ff" stop-opacity="0.66" />
+              <stop offset="100%" stop-color="#00b4ff" stop-opacity="0" />
+            </linearGradient>
+          </defs>
+          <path
+            class="aqua-hero-flow-path"
+            d="M-80 610 C 220 590, 270 270, 560 330 S 940 610, 1510 180"
+          />
+          <path
+            class="aqua-hero-flow-path aqua-hero-flow-path-soft"
+            d="M-100 660 C 240 640, 360 410, 650 450 S 1090 580, 1520 300"
+          />
+          <circle cx="560" cy="330" r="4" class="aqua-flow-node" />
+          <circle cx="1004" cy="520" r="4" class="aqua-flow-node" />
+        </svg>
 
-        <div class="max-w-4xl w-full text-center z-10">
-          <div
-            class="inline-block glass-card p-4 mb-8 rounded-xl border-primary/20"
-          >
-            <div class="flex items-center gap-4 text-primary font-label-sm">
-              <span class="material-symbols-outlined text-[14px]">code</span>
-              <span>Growth • Software • AI</span>
+        <div class="aqua-hero-shell">
+          <div class="aqua-hero-copy">
+            <div class="aqua-hero-kicker">
+              <span class="aqua-hero-status-dot" aria-hidden="true"></span>
+              <span data-i18n="hero.kicker">Software • Automation • AI</span>
             </div>
-          </div>
-          <h1
-            class="font-headline-xl text-headline-xl md:text-[64px] mb-6 leading-tight"
-          >
-            حلول رقمية ونمو فعلي <br />
-            <span class="text-primary glow-text" data-i18n="hero.titleAccent"
-              >From launch to scale</span
-            >
-          </h1>
-          <p
-            class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10"
-            data-i18n="hero.subtitle"
-          >
-            We build websites and systems focused on attracting leads, receiving
-            requests, and handling the first response through a clear,
-            executable flow.
-          </p>
 
-          <!-- Terminal Display Component -->
-          <div
-            class="glass-card rounded-xl overflow-hidden text-left font-label-sm border-primary/30 max-w-2xl mx-auto shadow-2xl"
-            style="direction: ltr"
-          >
-            <div
-              class="bg-surface-container-highest px-4 py-2 flex items-center gap-2 border-b border-primary/10"
-            >
-              <div class="w-3 h-3 rounded-full bg-red-500/50"></div>
-              <div class="w-3 h-3 rounded-full bg-yellow-500/50"></div>
-              <div class="w-3 h-3 rounded-full bg-green-500/50"></div>
-              <span class="ml-4 text-xs text-on-surface-variant opacity-90"
-                >terminal — aqua-tech</span
+            <h1 id="hero-title" class="aqua-hero-title">
+              <span data-i18n="hero.title">نحوّل التعقيد</span>
+              <span
+                class="aqua-hero-title-accent"
+                data-i18n="hero.titleAccent"
+                >إلى تدفّق.</span
+              >
+            </h1>
+
+            <p class="aqua-hero-subtitle" data-i18n="hero.subtitle">
+              نبني مواقع وأنظمة وأتمتة ذكية تربط عملياتك وعملاءك ونموك ضمن
+              تدفّق رقمي واحد واضح وقابل للتوسّع.
+            </p>
+
+            <div class="aqua-hero-actions">
+              <a
+                href="#contact"
+                class="aqua-hero-btn aqua-hero-btn-primary"
+                data-i18n="hero.ctaPrimary"
+                >ابدأ مشروعك</a
+              >
+              <a
+                href="#trust"
+                class="aqua-hero-btn aqua-hero-btn-secondary"
+                data-i18n="hero.ctaSecondary"
+                >استكشف كيف نعمل</a
               >
             </div>
-            <div class="p-6 font-mono text-sm leading-relaxed text-on-surface">
-              <div class="flex gap-2">
-                <span class="text-primary">$</span
-                ><span>npx create-aqua-app</span>
-              </div>
-              <div class="text-secondary mt-1">... fetching architecture</div>
-              <div class="flex gap-2 mt-4">
-                <span class="text-primary">$</span><span>build --optimize</span>
-              </div>
-              <div class="text-tertiary-fixed-dim mt-1">
-                ✔ shipped in <span class="text-primary">minutes</span> —
-                performance ✅
-              </div>
-              <div class="flex gap-2 mt-4">
-                <span class="text-primary">$</span
-                ><span class="terminal-cursor">deploy --env=prod</span>
-              </div>
+
+            <div class="aqua-hero-proof" aria-label="Aqua.Tech capabilities">
+              <span data-i18n="hero.proof1">مواقع ومنصات</span>
+              <span data-i18n="hero.proof2">أنظمة مخصصة</span>
+              <span data-i18n="hero.proof3">أتمتة وذكاء اصطناعي</span>
             </div>
           </div>
 
-          <div
-            class="mt-12 flex flex-col md:flex-row items-center justify-center gap-6"
-          >
-            <a
-              href="#contact"
-              class="w-full md:w-auto bg-primary text-on-primary px-10 py-4 font-bold rounded-lg shadow-[0_0_20px_rgba(0,180,255,0.3)] hover:scale-105 transition-all no-underline"
-              data-i18n="hero.ctaPrimary"
-            >
-              ابدأ مشروعك</a
-            >
+          <div class="aqua-hero-runtime" aria-label="Aqua Flow Engine">
+            <div class="aqua-runtime-glow" aria-hidden="true"></div>
+            <div class="aqua-runtime-window">
+              <div class="aqua-runtime-topbar">
+                <div class="aqua-runtime-dots" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </div>
+                <span class="aqua-runtime-title">aqua-flow.runtime</span>
+                <span class="aqua-runtime-secure">TLS 1.3</span>
+              </div>
 
-            <a
-              href="#solutions"
-              class="w-full md:w-auto border border-primary text-primary px-10 py-4 font-bold rounded-lg hover:bg-primary/10 transition-all no-underline"
-              data-i18n="hero.ctaSecondary"
-            >
-              استعرض الحلول</a
-            >
+              <div class="aqua-runtime-body">
+                <div class="aqua-runtime-command">
+                  <span class="aqua-runtime-prompt">$</span>
+                  <span>aqua.flow --initialize</span>
+                </div>
+
+                <ol class="aqua-flow-stack" aria-label="Automated business flow">
+                  <li>
+                    <span class="aqua-flow-index">01</span>
+                    <span class="aqua-flow-command">lead.capture</span>
+                    <span class="aqua-flow-state">ready</span>
+                  </li>
+                  <li>
+                    <span class="aqua-flow-index">02</span>
+                    <span class="aqua-flow-command">ai.analyze</span>
+                    <span class="aqua-flow-state">complete</span>
+                  </li>
+                  <li>
+                    <span class="aqua-flow-index">03</span>
+                    <span class="aqua-flow-command">crm.sync</span>
+                    <span class="aqua-flow-state">complete</span>
+                  </li>
+                  <li>
+                    <span class="aqua-flow-index">04</span>
+                    <span class="aqua-flow-command">proposal.generate</span>
+                    <span class="aqua-flow-state">complete</span>
+                  </li>
+                  <li>
+                    <span class="aqua-flow-index">05</span>
+                    <span class="aqua-flow-command">client.notify</span>
+                    <span class="aqua-flow-state">sent</span>
+                  </li>
+                </ol>
+
+                <div class="aqua-runtime-status">
+                  <span class="aqua-runtime-status-light" aria-hidden="true"></span>
+                  <span>FLOW ONLINE</span>
+                  <span class="aqua-runtime-status-meta">5/5 systems connected</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="aqua-runtime-caption">
+              <span data-i18n="hero.runtimeLabel">Aqua Flow Engine</span>
+              <span data-i18n="hero.runtimeMeta"
+                >مترابط • مؤتمت • قابل للقياس</span
+              >
+            </div>
           </div>
         </div>
       </section>
