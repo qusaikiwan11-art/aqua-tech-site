@@ -1,0 +1,13 @@
+Aqua.Tech Homepage HP-02B — Interactive Hero Polish
+Base commit: 1a12aa3 feat: add interactive hero motion
+
+css/aqua-hero-motion.css
+js/aqua-hero-motion.js
+js/site-i18n.js
+src/partials/hero.html
+src/partials/head.html
+src/partials/scripts.html
+src/template.html
+index.html
+docs/BATCH_HP_02B_INTERACTIVE_HERO_POLISH.md
+HP02B_MANIFEST.txt

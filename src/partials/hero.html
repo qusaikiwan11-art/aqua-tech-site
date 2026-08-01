@@ -5,6 +5,7 @@
   <div class="aqua-hero-grid" aria-hidden="true"></div>
   <div class="aqua-hero-aura aqua-hero-aura-one" aria-hidden="true"></div>
   <div class="aqua-hero-aura aqua-hero-aura-two" aria-hidden="true"></div>
+  <div class="aqua-hero-pointer-light" aria-hidden="true"></div>
 
   <svg
     class="aqua-hero-flow-map"
@@ -28,6 +29,15 @@
       class="aqua-hero-flow-path aqua-hero-flow-path-soft"
       d="M-100 660 C 240 640, 360 410, 650 450 S 1090 580, 1520 300"
     />
+    <circle r="3.5" class="aqua-flow-tracer">
+      <animateMotion
+        class="aqua-flow-tracer-motion"
+        begin="indefinite"
+        dur="5.8s"
+        repeatCount="indefinite"
+        path="M-80 610 C 220 590, 270 270, 560 330 S 940 610, 1510 180"
+      />
+    </circle>
     <circle cx="560" cy="330" r="4" class="aqua-flow-node" />
     <circle cx="1004" cy="520" r="4" class="aqua-flow-node" />
   </svg>
@@ -36,7 +46,7 @@
     <div class="aqua-hero-copy">
       <div class="aqua-hero-kicker">
         <span class="aqua-hero-status-dot" aria-hidden="true"></span>
-        <span data-i18n="hero.kicker">Software • Automation • AI</span>
+        <span data-i18n="hero.kicker">برمجيات • أتمتة • ذكاء اصطناعي</span>
       </div>
 
       <h1 id="hero-title" class="aqua-hero-title">

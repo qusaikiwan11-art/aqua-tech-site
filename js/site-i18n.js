@@ -269,7 +269,7 @@
 
   const DATA_I18N = {
     ar: {
-      "hero.kicker": "Software • Automation • AI",
+      "hero.kicker": "برمجيات • أتمتة • ذكاء اصطناعي",
       "hero.title": "نحوّل التعقيد",
       "hero.titleAccent": "إلى تدفّق.",
       "hero.subtitle":

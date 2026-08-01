@@ -8,6 +8,9 @@
   const reduceMotion = window.matchMedia(
     "(prefers-reduced-motion: reduce)",
   ).matches;
+  const runtimeWindow = hero.querySelector(".aqua-runtime-window");
+  const flowTracer = hero.querySelector(".aqua-flow-tracer");
+  const flowTracerMotion = hero.querySelector(".aqua-flow-tracer-motion");
 
   const showTerminalImmediately = () => {
     hero
@@ -85,6 +88,16 @@
     window.setTimeout(
       () => {
         status?.classList.add("is-terminal-visible", "is-flow-online");
+        flowTracer?.classList.add("is-flow-tracer-online");
+
+        if (typeof flowTracerMotion?.beginElement === "function") {
+          try {
+            flowTracerMotion.beginElement();
+          } catch (_error) {
+            flowTracer?.classList.remove("is-flow-tracer-online");
+          }
+        }
+
         hero.dataset.motionState = "online";
       },
       850 + steps.length * 210 + 170,
@@ -108,6 +121,7 @@
       if (!pendingEvent) return;
 
       const rect = hero.getBoundingClientRect();
+      hero.classList.add("is-pointer-active");
       const normalizedX = Math.max(
         -1,
         Math.min(1, ((pendingEvent.clientX - rect.left) / rect.width - 0.5) * 2),
@@ -143,6 +157,29 @@
         "--aqua-runtime-rotate-y",
         `${normalizedX * 1.7}deg`,
       );
+      hero.style.setProperty(
+        "--aqua-pointer-x",
+        `${pendingEvent.clientX - rect.left}px`,
+      );
+      hero.style.setProperty(
+        "--aqua-pointer-y",
+        `${pendingEvent.clientY - rect.top}px`,
+      );
+
+      if (runtimeWindow) {
+        const runtimeRect = runtimeWindow.getBoundingClientRect();
+        const runtimeX = Math.max(
+          0,
+          Math.min(runtimeRect.width, pendingEvent.clientX - runtimeRect.left),
+        );
+        const runtimeY = Math.max(
+          0,
+          Math.min(runtimeRect.height, pendingEvent.clientY - runtimeRect.top),
+        );
+
+        hero.style.setProperty("--aqua-runtime-pointer-x", `${runtimeX}px`);
+        hero.style.setProperty("--aqua-runtime-pointer-y", `${runtimeY}px`);
+      }
     };
 
     hero.addEventListener(
@@ -157,6 +194,7 @@
 
     hero.addEventListener("pointerleave", () => {
       pendingEvent = null;
+      hero.classList.remove("is-pointer-active");
       hero.style.setProperty("--aqua-shift-x", "0px");
       hero.style.setProperty("--aqua-shift-y", "0px");
       hero.style.setProperty("--aqua-shift-x-soft", "0px");
@@ -165,6 +203,10 @@
       hero.style.setProperty("--aqua-shift-y-inverse", "0px");
       hero.style.setProperty("--aqua-runtime-rotate-x", "0deg");
       hero.style.setProperty("--aqua-runtime-rotate-y", "0deg");
+      hero.style.setProperty("--aqua-pointer-x", "50%");
+      hero.style.setProperty("--aqua-pointer-y", "50%");
+      hero.style.setProperty("--aqua-runtime-pointer-x", "50%");
+      hero.style.setProperty("--aqua-runtime-pointer-y", "50%");
     });
   }
 
@@ -184,5 +226,10 @@
       },
       { passive: true },
     );
+
+    button.addEventListener("pointerleave", () => {
+      button.style.setProperty("--aqua-btn-x", "50%");
+      button.style.setProperty("--aqua-btn-y", "50%");
+    });
   });
 })();
