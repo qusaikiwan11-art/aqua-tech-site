@@ -1,0 +1,304 @@
+/* Aqua.Tech HP-02A — Signature hero motion system */
+.aqua-signature-hero {
+  box-sizing: border-box;
+  --aqua-shift-x: 0px;
+  --aqua-shift-y: 0px;
+  --aqua-shift-x-soft: 0px;
+  --aqua-shift-y-soft: 0px;
+  --aqua-shift-x-inverse: 0px;
+  --aqua-shift-y-inverse: 0px;
+  --aqua-runtime-rotate-x: 0deg;
+  --aqua-runtime-rotate-y: 0deg;
+}
+
+.aqua-hero-subtitle {
+  color: rgba(222, 236, 252, 0.82);
+}
+
+.aqua-hero-btn {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  --aqua-btn-x: 50%;
+  --aqua-btn-y: 50%;
+}
+
+.aqua-hero-btn::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  z-index: -1;
+  pointer-events: none;
+  border-radius: inherit;
+  background: radial-gradient(
+    170px circle at var(--aqua-btn-x) var(--aqua-btn-y),
+    rgba(255, 255, 255, 0.28),
+    transparent 62%
+  );
+  opacity: 0;
+  transition: opacity 220ms ease;
+}
+
+.aqua-hero-btn:hover::after,
+.aqua-hero-btn:focus-visible::after {
+  opacity: 1;
+}
+
+.aqua-hero-btn:focus-visible {
+  outline: 2px solid rgba(137, 206, 255, 0.9);
+  outline-offset: 4px;
+}
+
+.aqua-hero-grid,
+.aqua-hero-aura,
+.aqua-runtime-window {
+  transition: transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.aqua-hero-grid {
+  transform: translate3d(var(--aqua-shift-x-soft), var(--aqua-shift-y-soft), 0);
+}
+
+.aqua-hero-aura-one {
+  transform: translate3d(var(--aqua-shift-x), var(--aqua-shift-y), 0);
+}
+
+.aqua-hero-aura-two {
+  transform: translate3d(var(--aqua-shift-x-inverse), var(--aqua-shift-y-inverse), 0);
+}
+
+.aqua-runtime-window {
+  transform: perspective(1100px)
+    rotateX(var(--aqua-runtime-rotate-x))
+    rotateY(var(--aqua-runtime-rotate-y));
+  transform-style: preserve-3d;
+}
+
+html.aqua-hero-motion .aqua-hero-kicker,
+html.aqua-hero-motion .aqua-hero-title > span,
+html.aqua-hero-motion .aqua-hero-subtitle,
+html.aqua-hero-motion .aqua-hero-actions,
+html.aqua-hero-motion .aqua-hero-proof,
+html.aqua-hero-motion .aqua-runtime-caption {
+  opacity: 0;
+  filter: blur(7px);
+  transform: translate3d(0, 18px, 0);
+}
+
+html.aqua-hero-motion .aqua-hero-runtime {
+  opacity: 0;
+  filter: blur(8px);
+  transform: translate3d(-24px, 18px, 0) scale(0.972);
+}
+
+html[dir="ltr"].aqua-hero-motion .aqua-hero-runtime {
+  transform: translate3d(24px, 18px, 0) scale(0.972);
+}
+
+html.aqua-hero-motion .aqua-hero-kicker,
+html.aqua-hero-motion .aqua-hero-title > span,
+html.aqua-hero-motion .aqua-hero-subtitle,
+html.aqua-hero-motion .aqua-hero-actions,
+html.aqua-hero-motion .aqua-hero-proof,
+html.aqua-hero-motion .aqua-runtime-caption,
+html.aqua-hero-motion .aqua-hero-runtime {
+  transition:
+    opacity 760ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 900ms cubic-bezier(0.22, 1, 0.36, 1),
+    filter 760ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+html.aqua-hero-motion.is-hero-entered .aqua-hero-kicker,
+html.aqua-hero-motion.is-hero-entered .aqua-hero-title > span,
+html.aqua-hero-motion.is-hero-entered .aqua-hero-subtitle,
+html.aqua-hero-motion.is-hero-entered .aqua-hero-actions,
+html.aqua-hero-motion.is-hero-entered .aqua-hero-proof,
+html.aqua-hero-motion.is-hero-entered .aqua-runtime-caption,
+html.aqua-hero-motion.is-hero-entered .aqua-hero-runtime {
+  opacity: 1;
+  filter: blur(0);
+  transform: translate3d(0, 0, 0) scale(1);
+}
+
+html.aqua-hero-motion .aqua-hero-kicker {
+  transition-delay: 70ms;
+}
+
+html.aqua-hero-motion .aqua-hero-title > span:first-child {
+  transition-delay: 170ms;
+}
+
+html.aqua-hero-motion .aqua-hero-title > span:nth-child(2) {
+  transition-delay: 285ms;
+}
+
+html.aqua-hero-motion .aqua-hero-subtitle {
+  transition-delay: 420ms;
+}
+
+html.aqua-hero-motion .aqua-hero-actions {
+  transition-delay: 535ms;
+}
+
+html.aqua-hero-motion .aqua-hero-proof {
+  transition-delay: 650ms;
+}
+
+html.aqua-hero-motion .aqua-hero-runtime {
+  transition-delay: 210ms;
+}
+
+html.aqua-hero-motion .aqua-runtime-caption {
+  transition-delay: 735ms;
+}
+
+html.aqua-hero-motion .aqua-runtime-command,
+html.aqua-hero-motion .aqua-flow-stack li,
+html.aqua-hero-motion .aqua-runtime-status {
+  opacity: 0;
+  transform: translate3d(0, 10px, 0);
+}
+
+html.aqua-hero-motion .aqua-runtime-command,
+html.aqua-hero-motion .aqua-flow-stack li,
+html.aqua-hero-motion .aqua-runtime-status {
+  transition:
+    opacity 440ms ease,
+    transform 560ms cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 320ms ease,
+    background 320ms ease,
+    box-shadow 320ms ease;
+}
+
+html.aqua-hero-motion .aqua-runtime-command.is-terminal-visible,
+html.aqua-hero-motion .aqua-flow-stack li.is-terminal-visible,
+html.aqua-hero-motion .aqua-runtime-status.is-terminal-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.aqua-flow-stack li.is-flow-active {
+  border-color: rgba(137, 206, 255, 0.18);
+  background: linear-gradient(90deg, rgba(0, 180, 255, 0.085), transparent 74%);
+  box-shadow: inset 3px 0 0 rgba(0, 180, 255, 0.55);
+}
+
+.aqua-flow-stack li.is-flow-active .aqua-flow-index {
+  border-color: rgba(137, 206, 255, 0.65);
+  box-shadow:
+    0 0 0 4px rgba(5, 20, 36, 0.7),
+    0 0 22px rgba(0, 180, 255, 0.28);
+}
+
+.aqua-flow-stack li.is-flow-active .aqua-flow-state {
+  color: #78f0c1;
+  text-shadow: 0 0 12px rgba(85, 230, 174, 0.35);
+}
+
+html.aqua-hero-motion .aqua-flow-node {
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+html.aqua-hero-motion .aqua-flow-node.is-flow-node-visible {
+  animation: aquaFlowNodeReveal 620ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.aqua-runtime-status.is-flow-online {
+  animation: aquaFlowOnlineReveal 760ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.aqua-runtime-status.is-flow-online .aqua-runtime-status-light,
+.aqua-hero-status-dot {
+  animation: aquaStatusPulse 2.6s ease-in-out infinite;
+}
+
+@keyframes aquaFlowNodeReveal {
+  0% {
+    opacity: 0;
+    transform: scale(0.25);
+  }
+  58% {
+    opacity: 1;
+    transform: scale(1.7);
+  }
+  100% {
+    opacity: 0.72;
+    transform: scale(1);
+  }
+}
+
+@keyframes aquaFlowOnlineReveal {
+  0% {
+    box-shadow: 0 0 0 rgba(85, 230, 174, 0);
+  }
+  45% {
+    box-shadow:
+      0 0 0 1px rgba(85, 230, 174, 0.2),
+      0 0 34px rgba(85, 230, 174, 0.16);
+  }
+  100% {
+    box-shadow: 0 0 0 rgba(85, 230, 174, 0);
+  }
+}
+
+@keyframes aquaStatusPulse {
+  0%,
+  100% {
+    box-shadow:
+      0 0 0 4px rgba(85, 230, 174, 0.07),
+      0 0 12px rgba(85, 230, 174, 0.48);
+  }
+  50% {
+    box-shadow:
+      0 0 0 7px rgba(85, 230, 174, 0.015),
+      0 0 20px rgba(85, 230, 174, 0.72);
+  }
+}
+
+@media (min-width: 921px) {
+  .aqua-hero-shell {
+    margin-top: -1.1rem;
+  }
+}
+
+@media (hover: none), (pointer: coarse) {
+  .aqua-runtime-window,
+  .aqua-hero-grid,
+  .aqua-hero-aura {
+    transform: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .aqua-hero-grid,
+  .aqua-hero-aura,
+  .aqua-runtime-window,
+  .aqua-hero-btn,
+  .aqua-hero-btn::after,
+  .aqua-hero-status-dot,
+  .aqua-runtime-status-light,
+  .aqua-flow-node {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+  }
+
+  html.aqua-hero-motion .aqua-hero-kicker,
+  html.aqua-hero-motion .aqua-hero-title > span,
+  html.aqua-hero-motion .aqua-hero-subtitle,
+  html.aqua-hero-motion .aqua-hero-actions,
+  html.aqua-hero-motion .aqua-hero-proof,
+  html.aqua-hero-motion .aqua-runtime-caption,
+  html.aqua-hero-motion .aqua-hero-runtime,
+  html.aqua-hero-motion .aqua-runtime-command,
+  html.aqua-hero-motion .aqua-flow-stack li,
+  html.aqua-hero-motion .aqua-runtime-status,
+  html.aqua-hero-motion .aqua-flow-node {
+    opacity: 1 !important;
+    filter: none !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}

@@ -56,6 +56,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="stylesheet" href="./css/aqua-hero-motion.css?v=hp02a" />
     <style>
       :root {
         --aqua-bg: #051424;
@@ -5775,6 +5776,7 @@ label.textContent = option.textContent.trim();
       })();
     </script>
 
+    <script src="./js/aqua-hero-motion.js?v=hp02a"></script>
     <script defer src="./js/site-i18n.js"></script>
     <script defer src="./js/form.js"></script>
     <script src="./js/aquatech-contact-client.js?v=n8n-1" defer></script>
@@ -5796,7 +5798,9 @@ label.textContent = option.textContent.trim();
           document.querySelectorAll(selectors.join(",")),
         ).filter(
           (el) =>
-            !el.closest("header") && !el.classList.contains("aqua-reveal"),
+            !el.closest("header") &&
+            !el.classList.contains("aqua-reveal") &&
+            !el.classList.contains("aqua-signature-hero"),
         );
 
         items.forEach((el, index) => {

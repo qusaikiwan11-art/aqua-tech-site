@@ -1,0 +1,14 @@
+Aqua.Tech Homepage Batch HP-02A
+Title: Hero Entrance & Terminal Sequence
+Requires: HP-01B Signature Hero
+
+Adds:
+- css/aqua-hero-motion.css
+- js/aqua-hero-motion.js
+- docs/BATCH_HP_02A_HERO_MOTION.md
+
+Updates:
+- src/template.html
+- index.html
+- src/partials/head.html
+- src/partials/scripts.html
