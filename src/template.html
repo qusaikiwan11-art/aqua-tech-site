@@ -48,7 +48,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -59,8 +59,9 @@
     <link rel="stylesheet" href="./css/aqua-hero-motion.css?v=hp02b" />
     <link rel="stylesheet" href="./css/aqua-complexity-flow.css?v=hp03c" />
     <link rel="stylesheet" href="./css/aqua-service-paths.css?v=hp04a" />
-    <link rel="stylesheet" href="./css/aqua-motion-system.css?v=hp05" />
+    <link rel="stylesheet" href="./css/aqua-motion-system.css?v=hp09" />
     <link rel="stylesheet" href="./css/aqua-product-showcase.css?v=hp06a" />
+    <link rel="stylesheet" href="./css/aqua-navigation.css?v=hp09" />
     <style>
       :root {
         --aqua-bg: #051424;
@@ -2064,11 +2065,21 @@
         >
 
         <div
-          class="hidden lg:flex items-center gap-6 font-body-md text-body-md"
+          class="hidden lg:flex items-center gap-5 xl:gap-6 font-body-md text-body-md"
         >
           <a
             class="nav-link text-on-surface-variant hover:text-primary transition-colors"
+            href="#flow"
+            data-aqua-nav
+            data-i18n="nav.method"
+          >
+            منهجنا</a
+          >
+
+          <a
+            class="nav-link text-on-surface-variant hover:text-primary transition-colors"
             href="#trust"
+            data-aqua-nav
             data-i18n="nav.why"
           >
             لماذا نحن</a
@@ -2077,6 +2088,7 @@
           <a
             class="nav-link text-on-surface-variant hover:text-primary transition-colors"
             href="#services"
+            data-aqua-nav
             data-i18n="nav.services"
           >
             الخدمات</a
@@ -2085,17 +2097,10 @@
           <a
             class="nav-link text-on-surface-variant hover:text-primary transition-colors"
             href="#solutions"
+            data-aqua-nav
             data-i18n="nav.systems"
           >
             الحلول</a
-          >
-
-          <a
-            class="nav-link text-on-surface-variant hover:text-primary transition-colors"
-            href="#flow"
-            data-i18n="nav.method"
-          >
-            منهجنا</a
           >
 
           <a
@@ -2109,6 +2114,7 @@
           <a
             class="nav-link text-on-surface-variant hover:text-primary transition-colors"
             href="#faq"
+            data-aqua-nav
             data-i18n="nav.faq"
           >
             الأسئلة</a
@@ -2117,6 +2123,7 @@
           <a
             class="nav-link text-on-surface-variant hover:text-primary transition-colors"
             href="#contact"
+            data-aqua-nav
             data-i18n="nav.contact"
           >
             تواصل</a
@@ -2194,35 +2201,39 @@
       >
         <div class="p-3 flex flex-col gap-1 text-sm">
           <a
-            class="rounded-lg px-4 py-3 text-on-surface-variant hover:bg-primary/10 hover:text-primary"
+            class="aqua-mobile-nav-link rounded-lg px-4 py-3 text-on-surface-variant hover:bg-primary/10 hover:text-primary"
+            href="#flow"
+            data-aqua-nav
+            data-i18n="nav.method"
+          >
+            منهجنا</a
+          >
+
+          <a
+            class="aqua-mobile-nav-link rounded-lg px-4 py-3 text-on-surface-variant hover:bg-primary/10 hover:text-primary"
             href="#trust"
+            data-aqua-nav
             data-i18n="nav.why"
           >
             لماذا نحن</a
           >
 
           <a
-            class="rounded-lg px-4 py-3 text-on-surface-variant hover:bg-primary/10 hover:text-primary"
+            class="aqua-mobile-nav-link rounded-lg px-4 py-3 text-on-surface-variant hover:bg-primary/10 hover:text-primary"
             href="#services"
+            data-aqua-nav
             data-i18n="nav.services"
           >
             الخدمات</a
           >
 
           <a
-            class="rounded-lg px-4 py-3 text-on-surface-variant hover:bg-primary/10 hover:text-primary"
+            class="aqua-mobile-nav-link rounded-lg px-4 py-3 text-on-surface-variant hover:bg-primary/10 hover:text-primary"
             href="#solutions"
+            data-aqua-nav
             data-i18n="nav.systems"
           >
             الحلول</a
-          >
-
-          <a
-            class="rounded-lg px-4 py-3 text-on-surface-variant hover:bg-primary/10 hover:text-primary"
-            href="#flow"
-            data-i18n="nav.method"
-          >
-            منهجنا</a
           >
 
           <a
@@ -2234,24 +2245,18 @@
           >
 
           <a
-            class="rounded-lg px-4 py-3 text-on-surface-variant hover:bg-primary/10 hover:text-primary"
+            class="aqua-mobile-nav-link rounded-lg px-4 py-3 text-on-surface-variant hover:bg-primary/10 hover:text-primary"
             href="#faq"
+            data-aqua-nav
             data-i18n="nav.faq"
           >
             الأسئلة</a
           >
 
           <a
-            class="rounded-lg px-4 py-3 text-on-surface-variant hover:bg-primary/10 hover:text-primary"
-            href="#support"
-            data-i18n="nav.support"
-          >
-            الدعم</a
-          >
-
-          <a
-            class="rounded-lg px-4 py-3 text-on-surface-variant hover:bg-primary/10 hover:text-primary"
+            class="aqua-mobile-nav-link rounded-lg px-4 py-3 text-on-surface-variant hover:bg-primary/10 hover:text-primary"
             href="#contact"
+            data-aqua-nav
             data-i18n="nav.contact"
           >
             تواصل</a
@@ -3696,152 +3701,6 @@
         </div>
       </section>
 
-            <section class="py-16 bg-surface-container-lowest/60" id="support">
-        <div class="max-w-container-max mx-auto px-margin-mobile md:px-20">
-          <div class="text-center mb-10">
-            <span class="section-kicker" data-i18n="support.kicker">
-              After launch</span
-            >
-
-            <h2
-              class="font-headline-lg text-headline-lg md:text-headline-xl"
-              data-i18n="support.title"
-            >
-              Our role does not end at delivery
-            </h2>
-
-            <p
-              class="mt-4 font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto leading-relaxed"
-              data-i18n="support.description"
-            >
-              We support you after launch with follow-up, improvements, and
-              technical support to keep your project stable and performing
-              better.
-            </p>
-          </div>
-
-          <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter"
-          >
-            <article class="glass-card p-7 rounded-2xl h-full">
-              <div class="aqua-icon-box mb-6">
-                <span class="material-symbols-outlined">construction</span>
-              </div>
-
-              <span class="aqua-card-kicker" data-i18n="support.card1.badge">
-                Technical support</span
-              >
-
-              <h3
-                class="font-headline-md text-headline-md mb-3"
-                data-i18n="support.card1.title"
-              >
-                Issue handling and follow-up
-              </h3>
-
-              <p
-                class="text-on-surface-variant leading-relaxed"
-                data-i18n="support.card1.desc"
-              >
-                We handle technical issues and post-launch follow-up so the
-                website or system stays stable.
-              </p>
-            </article>
-
-            <article
-              class="glass-card p-7 rounded-2xl h-full border-primary/20"
-            >
-              <div class="aqua-icon-box mb-6">
-                <span class="material-symbols-outlined">bolt</span>
-              </div>
-
-              <span class="aqua-card-kicker" data-i18n="support.card2.badge">
-                Fast response</span
-              >
-
-              <h3
-                class="font-headline-md text-headline-md mb-3"
-                data-i18n="support.card2.title"
-              >
-                Clear response time
-              </h3>
-
-              <p
-                class="text-on-surface-variant leading-relaxed"
-                data-i18n="support.card2.desc"
-              >
-                Clear response and follow-up time based on the request type and
-                issue priority.
-              </p>
-            </article>
-
-            <article class="glass-card p-7 rounded-2xl h-full">
-              <div class="aqua-icon-box mb-6">
-                <span class="material-symbols-outlined">trending_up</span>
-              </div>
-
-              <span class="aqua-card-kicker" data-i18n="support.card3.badge">
-                Improvements</span
-              >
-
-              <h3
-                class="font-headline-md text-headline-md mb-3"
-                data-i18n="support.card3.title"
-              >
-                Continuous improvement
-              </h3>
-
-              <p
-                class="text-on-surface-variant leading-relaxed"
-                data-i18n="support.card3.desc"
-              >
-                Performance and user experience improvements with small
-                adjustments based on post-launch needs.
-              </p>
-            </article>
-
-            <article
-              class="glass-card p-7 rounded-2xl h-full border-primary/30"
-            >
-              <div class="aqua-icon-box mb-6">
-                <span class="material-symbols-outlined">shield</span>
-              </div>
-
-              <span class="aqua-card-kicker" data-i18n="support.card4.badge">
-                Stability</span
-              >
-
-              <h3
-                class="font-headline-md text-headline-md mb-3"
-                data-i18n="support.card4.title"
-              >
-                Backup readiness
-              </h3>
-
-              <p
-                class="text-on-surface-variant leading-relaxed"
-                data-i18n="support.card4.desc"
-              >
-                Essential preparations to protect project stability and reduce
-                the impact of unexpected issues.
-              </p>
-            </article>
-          </div>
-
-          <div class="mt-10 flex justify-center">
-            <a
-              href="#contact"
-              data-service="other"
-              class="offer-cta-btn offer-cta-btn-primary js-service-cta max-w-[320px]"
-            >
-              <span data-i18n="support.cta"
-                >Request a suitable support plan</span
-              >
-              <span class="material-symbols-outlined btn-icon"></span
-            ></a>
-          </div>
-        </div>
-      </section>
       <section class="py-16 bg-surface-container-low/30" id="faq">
         <div class="max-w-container-max mx-auto px-margin-mobile md:px-20">
           <div class="text-center mb-10">
@@ -4884,33 +4743,33 @@
       </section>
     </main>
     <footer
-      class="bg-surface-container-lowest border-t border-outline-variant/20 py-16 px-margin-mobile md:px-20"
+      class="bg-surface-container-lowest border-t border-outline-variant/20 py-8 px-margin-mobile md:px-20"
     >
       <div class="max-w-container-max mx-auto">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-14">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 mb-6">
           <div class="lg:col-span-5">
             <div
-              class="font-headline-md text-headline-md font-bold text-primary mb-6 flex items-center gap-2"
+              class="text-xl font-bold text-primary mb-2 flex items-center gap-2"
             >
               <img
                 src="assets/logoo.webp"
                 alt="Aqua.Tech"
-                class="h-9 w-9 object-contain"
+                class="h-7 w-7 object-contain"
               />
               <span>Aqua.Tech</span>
             </div>
 
             <p
-              class="font-body-md text-on-surface-variant leading-relaxed max-w-md"
+              class="text-sm text-on-surface-variant leading-6 max-w-md"
               data-i18n="footer.desc"
             >
               نبني صفحات تسويقية احترافية، مواقع، أنظمة، وأتمتة تساعد الشركات
               ورواد الأعمال على النمو بشكل أسرع وبطريقة أوضح وأكثر احترافية.
             </p>
 
-            <div class="flex gap-3 mt-8">
+            <div class="flex gap-2 mt-4">
               <a
-                class="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-primary/20 bg-primary/10 text-primary hover:bg-primary/20 hover:scale-95 transition-all"
+                class="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-primary/20 bg-primary/10 text-primary hover:bg-primary/20 hover:scale-95 transition-all"
                 href="https://wa.me/962780932199"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -4925,7 +4784,7 @@
               </a>
 
               <a
-                class="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-primary/20 bg-primary/10 text-primary hover:bg-primary/20 hover:scale-95 transition-all"
+                class="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-primary/20 bg-primary/10 text-primary hover:bg-primary/20 hover:scale-95 transition-all"
                 href="mailto:info.aquatech.jo@gmail.com"
                 aria-label="Email"
               >
@@ -4938,7 +4797,7 @@
               </a>
 
               <a
-                class="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-primary/20 bg-primary/10 text-primary hover:bg-primary/20 hover:scale-95 transition-all"
+                class="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-primary/20 bg-primary/10 text-primary hover:bg-primary/20 hover:scale-95 transition-all"
                 href="https://www.instagram.com/aquatech.jo/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -4954,16 +4813,16 @@
             </div>
           </div>
 
-          <div class="lg:col-span-7 grid grid-cols-2 md:grid-cols-3 gap-8">
+          <div class="lg:col-span-7 grid grid-cols-2 md:grid-cols-3 gap-5 lg:gap-6">
             <div>
               <h3
-                class="font-bold text-on-surface mb-5"
+                class="text-sm font-bold text-on-surface mb-2"
                 data-i18n="footer.companyH"
               >
                 الشركة
               </h3>
 
-              <ul class="space-y-3 text-on-surface-variant font-body-md">
+              <ul class="space-y-1.5 text-sm leading-5 text-on-surface-variant">
                 <li>
                   <a
                     class="hover:text-primary transition-colors"
@@ -4971,6 +4830,15 @@
                     data-i18n="footer.method"
                   >
                     منهجنا</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:text-primary transition-colors"
+                    href="#about"
+                    data-i18n="footer.about"
+                  >
+                    من نحن</a
                   >
                 </li>
                 <li>
@@ -4985,7 +4853,16 @@
                 <li>
                   <a
                     class="hover:text-primary transition-colors"
-                    href="#security"
+                    href="#results"
+                    data-i18n="footer.results"
+                  >
+                    النتائج</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:text-primary transition-colors"
+                    href="#trust"
                     data-i18n="footer.security"
                   >
                     الأمان</a
@@ -4996,13 +4873,13 @@
 
             <div>
               <h3
-                class="font-bold text-on-surface mb-5"
+                class="text-sm font-bold text-on-surface mb-2"
                 data-i18n="footer.servicesH"
               >
                 الخدمات
               </h3>
 
-              <ul class="space-y-3 text-on-surface-variant font-body-md">
+              <ul class="space-y-1.5 text-sm leading-5 text-on-surface-variant">
                 <li>
                   <a
                     class="hover:text-primary transition-colors"
@@ -5024,7 +4901,7 @@
                 <li>
                   <a
                     class="hover:text-primary transition-colors"
-                    href="#offers"
+                    href="#solutions"
                     data-i18n="footer.offers"
                   >
                     العروض</a
@@ -5033,7 +4910,7 @@
                 <li>
                   <a
                     class="hover:text-primary transition-colors"
-                    href="#support"
+                    href="#contact"
                     data-i18n="footer.support"
                   >
                     الدعم بعد التسليم</a
@@ -5044,13 +4921,13 @@
 
             <div class="col-span-2 md:col-span-1">
               <h3
-                class="font-bold text-on-surface mb-5"
+                class="text-sm font-bold text-on-surface mb-2"
                 data-i18n="footer.contactH"
               >
                 تواصل
               </h3>
 
-              <ul class="space-y-3 text-on-surface-variant font-body-md">
+              <ul class="space-y-1.5 text-sm leading-5 text-on-surface-variant">
                 <li>
                   <a
                     class="hover:text-primary transition-colors"
@@ -5095,7 +4972,7 @@
         </div>
 
         <div
-          class="flex flex-col md:flex-row justify-between items-center gap-4 pt-8 border-t border-outline-variant/10 text-on-surface-variant font-label-sm"
+          class="flex flex-col md:flex-row justify-between items-center gap-2 pt-4 border-t border-outline-variant/10 text-xs text-on-surface-variant"
         >
           <p data-i18n="footer.copy">© Aqua.Tech — جميع الحقوق محفوظة.</p>
         </div>
@@ -5177,16 +5054,6 @@
             .querySelectorAll("a")
             .forEach((a) => a.addEventListener("click", closeMenu));
         }
-
-        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-          anchor.addEventListener("click", function (e) {
-            const target = document.querySelector(this.getAttribute("href"));
-            if (target) {
-              e.preventDefault();
-              target.scrollIntoView({ behavior: "smooth" });
-            }
-          });
-        });
 
         document.querySelectorAll(".faq-q").forEach((btn) => {
           btn.addEventListener("click", () => {
@@ -5366,7 +5233,8 @@ label.textContent = option.textContent.trim();
     </script>
 
     <script src="./js/aqua-hero-motion.js?v=hp02b"></script>
-    <script src="./js/aqua-motion-system.js?v=hp05"></script>
+    <script src="./js/aqua-navigation.js?v=hp09"></script>
+    <script src="./js/aqua-motion-system.js?v=hp09"></script>
     <script defer src="./js/site-i18n.js"></script>
     <script defer src="./js/form.js"></script>
     <script src="./js/aquatech-contact-client.js?v=n8n-1" defer></script>

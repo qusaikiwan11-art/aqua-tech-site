@@ -89,7 +89,7 @@
 html[dir="rtl"] .aqua-hero-kicker {
   direction: rtl;
   letter-spacing: 0;
-  font-family: Inter, system-ui, sans-serif;
+  font-family: "Manrope", "Alexandria", system-ui, sans-serif;
 }
 
 .aqua-hero-grid,

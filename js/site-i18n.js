@@ -271,6 +271,12 @@
   const DATA_I18N = {
     ar: {
       "nav.method": "منهجنا",
+      "nav.why": "لماذا نحن",
+      "nav.services": "الخدمات",
+      "nav.systems": "الحلول",
+      "nav.faq": "الأسئلة",
+      "nav.contact": "تواصل",
+      "nav.start": "ابدأ مشروعك",
       "hero.kicker": "برمجيات • أتمتة • ذكاء اصطناعي",
       "hero.title": "نحوّل التعقيد",
       "hero.titleAccent": "إلى تدفّق.",
@@ -802,6 +808,12 @@
 
     en: {
       "nav.method": "Our method",
+      "nav.why": "Why us",
+      "nav.services": "Services",
+      "nav.systems": "Solutions",
+      "nav.faq": "FAQ",
+      "nav.contact": "Contact",
+      "nav.start": "Start Project",
       "hero.kicker": "Software • Automation • AI",
       "hero.title": "We turn complexity",
       "hero.titleAccent": "into flow.",

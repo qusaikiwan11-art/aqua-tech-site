@@ -1,0 +1,22 @@
+HP-08 — Remove Duplicate Post-Launch Support Section
+
+Prerequisite:
+- HP-07R pending changes have already been applied on main at commit 601e818.
+
+Files included in the package:
+- HP08_MANIFEST.txt
+- dist/output.css
+- docs/BATCH_HP_08_REMOVE_DUPLICATE_SUPPORT.md
+- index.html
+- scripts/build-html.js
+- src/partials/faq.html
+- src/partials/footer.html
+- src/partials/header.html
+- src/template.html
+
+Outcome:
+- The public #support section and its CTA are removed.
+- Navigation and footer links to #support are removed.
+- The production page flows directly from #faq to #contact.
+- Growth and Care service content remains unchanged.
+- Technical security controls remain unchanged.

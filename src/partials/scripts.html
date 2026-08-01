@@ -25,16 +25,6 @@
         .forEach((a) => a.addEventListener("click", closeMenu));
     }
 
-    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-      anchor.addEventListener("click", function (e) {
-        const target = document.querySelector(this.getAttribute("href"));
-        if (target) {
-          e.preventDefault();
-          target.scrollIntoView({ behavior: "smooth" });
-        }
-      });
-    });
-
     document.querySelectorAll(".faq-q").forEach((btn) => {
       btn.addEventListener("click", () => {
         const item = btn.closest(".faq-item");
@@ -121,6 +111,7 @@
 </script>
 <script src="/js/aquatech-contact-client.js" defer></script>
 <script src="./js/aqua-hero-motion.js?v=hp02b"></script>
-<script src="./js/aqua-motion-system.js?v=hp05"></script>
+<script src="./js/aqua-navigation.js?v=hp09"></script>
+<script src="./js/aqua-motion-system.js?v=hp09"></script>
 <script defer src="./js/site-i18n.js"></script>
 <script defer src="./js/form.js"></script>

@@ -4,6 +4,9 @@
     "(prefers-reduced-motion: reduce)",
   ).matches;
   const coarsePointer = window.matchMedia("(pointer: coarse)").matches;
+  const finePointer = window.matchMedia(
+    "(hover: hover) and (pointer: fine)",
+  ).matches;
   const narrowViewport = window.matchMedia("(max-width: 767px)").matches;
   const saveData = Boolean(navigator.connection?.saveData);
   const liteMode = reducedMotion || coarsePointer || narrowViewport || saveData;
@@ -120,5 +123,56 @@
     updateProgress();
     window.addEventListener("scroll", requestProgressUpdate, { passive: true });
     window.addEventListener("resize", requestProgressUpdate, { passive: true });
+  }
+
+  if (!liteMode && finePointer) {
+    const pointerGlow = document.createElement("div");
+    pointerGlow.className = "aqua-pointer-glow";
+    pointerGlow.setAttribute("aria-hidden", "true");
+    document.body.appendChild(pointerGlow);
+
+    let pointerFrame = 0;
+    let pointerEvent = null;
+    let pointerIdleTimer = 0;
+
+    const hidePointerGlow = () => {
+      pointerGlow.classList.remove("is-active");
+    };
+
+    const updatePointerGlow = () => {
+      pointerFrame = 0;
+      if (!pointerEvent) return;
+
+      pointerGlow.style.setProperty(
+        "--aqua-pointer-screen-x",
+        `${pointerEvent.clientX}px`,
+      );
+      pointerGlow.style.setProperty(
+        "--aqua-pointer-screen-y",
+        `${pointerEvent.clientY}px`,
+      );
+      pointerGlow.classList.add("is-active");
+
+      window.clearTimeout(pointerIdleTimer);
+      pointerIdleTimer = window.setTimeout(hidePointerGlow, 760);
+    };
+
+    window.addEventListener(
+      "pointermove",
+      (event) => {
+        pointerEvent = event;
+        if (pointerFrame) return;
+        pointerFrame = window.requestAnimationFrame(updatePointerGlow);
+      },
+      { passive: true },
+    );
+
+    document.documentElement.addEventListener("pointerleave", () => {
+      pointerEvent = null;
+      window.clearTimeout(pointerIdleTimer);
+      hidePointerGlow();
+    });
+
+    window.addEventListener("blur", hidePointerGlow);
   }
 })();

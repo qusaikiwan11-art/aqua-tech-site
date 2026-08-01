@@ -1,0 +1,33 @@
+HP-11 — Unified Homepage Design System
+
+Prerequisite:
+- HP-10R is already applied over the pending HP-07R, HP-08, HP-09 and HP-10 changes.
+
+Files included in the package:
+- HP11_MANIFEST.txt
+- css/aqua-hero-motion.css
+- dist/output.css
+- docs/BATCH_HP_11_UNIFIED_HOMEPAGE_DESIGN_SYSTEM.md
+- index.html
+- js/site-i18n.js
+- scripts/build-html.js
+- src/input.css
+- src/partials/about.html
+- src/partials/contact.html
+- src/partials/faq.html
+- src/partials/footer.html
+- src/partials/head.html
+- src/partials/header.html
+- src/template.html
+
+Outcome:
+- Flow, Trust, Services, Solutions, FAQ and Contact use one spacing, heading,
+  panel, border, background and responsive rhythm.
+- Section boundaries form one continuous visual path from hero to footer.
+- Arabic uses Alexandria; English body copy uses Manrope; English headings use
+  Space Grotesk; technical labels use JetBrains Mono.
+- Header, core sections and footer are generated from their canonical partials.
+- Desktop and mobile navigation use complete bilingual translation keys.
+- All twelve FAQ entries translate through the canonical AR/EN dictionary.
+- Copyright is explicitly preserved in Arabic and English.
+- Retired Offers, Security and duplicate Support sections remain removed.

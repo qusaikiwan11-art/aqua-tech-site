@@ -190,3 +190,273 @@ html[dir="rtl"] .aqua-select-option {
 .aqua-select-error.is-visible {
   display: block;
 }
+
+/* HP-11: one visual system from the first content section to the footer. */
+:root {
+  --aqua-section-space: clamp(4.75rem, 6vw, 6.25rem);
+  --aqua-section-title: clamp(2rem, 3.5vw, 3.2rem);
+  --aqua-section-border: rgba(137, 206, 255, 0.1);
+  --aqua-panel-border: rgba(137, 206, 255, 0.14);
+  --aqua-panel-bg: rgba(5, 22, 36, 0.76);
+  --aqua-panel-bg-strong: rgba(8, 34, 54, 0.86);
+  --aqua-panel-radius: 1.5rem;
+}
+
+main > section {
+  scroll-margin-top: 6.75rem;
+}
+
+main > section + section {
+  box-shadow: inset 0 1px 0 var(--aqua-section-border);
+}
+
+#flow,
+#trust,
+#services,
+#solutions,
+#faq,
+#contact {
+  padding-block: var(--aqua-section-space);
+}
+
+.aqua-section {
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+}
+
+.aqua-section::before {
+  position: absolute;
+  z-index: -1;
+  width: min(36rem, 72vw);
+  height: min(36rem, 72vw);
+  border-radius: 999px;
+  background: radial-gradient(
+    circle,
+    rgba(0, 180, 255, 0.09),
+    transparent 70%
+  );
+  content: "";
+  pointer-events: none;
+}
+
+.aqua-section--trust {
+  background:
+    linear-gradient(180deg, rgba(1, 15, 31, 0.98), rgba(5, 20, 36, 0.94)),
+    #051424;
+}
+
+.aqua-section--trust::before {
+  inset-inline-start: -12rem;
+  top: 4rem;
+}
+
+.aqua-section--faq {
+  background:
+    linear-gradient(180deg, rgba(7, 27, 45, 0.72), rgba(3, 17, 31, 0.96)),
+    #051424;
+}
+
+.aqua-section--faq::before {
+  inset-inline-end: -10rem;
+  top: 20%;
+}
+
+.aqua-section--contact {
+  background:
+    linear-gradient(180deg, rgba(2, 15, 28, 0.98), rgba(1, 15, 31, 0.98)),
+    #010f1f;
+}
+
+.aqua-section--contact::before {
+  inset-inline-start: 12%;
+  bottom: -14rem;
+}
+
+.aqua-section--contact > .aqua-liquid-bg {
+  z-index: 0;
+}
+
+.aqua-section--contact > .max-w-container-max {
+  position: relative;
+  z-index: 1;
+}
+
+.aqua-section__header,
+.aqua-complexity-flow__header,
+.aqua-service-paths__header,
+.aqua-product-showcase__header {
+  max-width: 48rem;
+  margin: 0 auto clamp(2.25rem, 4vw, 3.25rem);
+  text-align: center;
+}
+
+.aqua-section__title,
+.aqua-complexity-flow__header h2,
+.aqua-service-paths__header h2,
+.aqua-product-showcase__title {
+  margin: 0;
+  color: #d4e4fa;
+  font-family: "Space Grotesk", "Alexandria", system-ui, sans-serif;
+  font-size: var(--aqua-section-title);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+}
+
+html[dir="rtl"] .aqua-section__title,
+html[dir="rtl"] .aqua-complexity-flow__header h2,
+html[dir="rtl"] .aqua-service-paths__header h2,
+html[dir="rtl"] .aqua-product-showcase__title {
+  letter-spacing: -0.02em;
+}
+
+.aqua-section__intro,
+.aqua-complexity-flow__header p,
+.aqua-service-paths__header p,
+.aqua-product-showcase__intro {
+  max-width: 44rem;
+  margin: 1rem auto 0;
+  color: #bdc8d2;
+  font-size: clamp(0.98rem, 1.4vw, 1.1rem);
+  line-height: 1.75;
+}
+
+.aqua-section__header .section-kicker {
+  margin-bottom: 0.9rem;
+}
+
+.aqua-trust-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.aqua-faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: start;
+}
+
+.aqua-system-card {
+  border: 1px solid var(--aqua-panel-border);
+  border-radius: var(--aqua-panel-radius);
+  background:
+    linear-gradient(145deg, rgba(137, 206, 255, 0.045), transparent 42%),
+    var(--aqua-panel-bg);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.025),
+    0 18px 50px rgba(0, 0, 0, 0.16);
+}
+
+.aqua-system-card--emphasis {
+  border-color: rgba(137, 206, 255, 0.28);
+  background:
+    linear-gradient(145deg, rgba(137, 206, 255, 0.1), transparent 48%),
+    var(--aqua-panel-bg-strong);
+}
+
+.aqua-system-card .aqua-icon-box {
+  border: 1px solid rgba(137, 206, 255, 0.14);
+  background: linear-gradient(
+    145deg,
+    rgba(137, 206, 255, 0.14),
+    rgba(0, 180, 255, 0.04)
+  );
+}
+
+.faq-item {
+  min-height: 5rem;
+  transition:
+    border-color 180ms ease,
+    background 180ms ease,
+    transform 180ms ease;
+}
+
+.faq-item:focus-within {
+  border-color: rgba(137, 206, 255, 0.34);
+  background:
+    linear-gradient(145deg, rgba(137, 206, 255, 0.09), transparent 48%),
+    var(--aqua-panel-bg-strong);
+}
+
+.faq-q {
+  min-height: 2rem;
+  color: #d4e4fa;
+  line-height: 1.6;
+}
+
+.faq-a {
+  padding-top: 0.85rem;
+  border-top: 1px solid rgba(137, 206, 255, 0.09);
+}
+
+.aqua-site-footer {
+  position: relative;
+  background:
+    linear-gradient(180deg, rgba(1, 15, 31, 0.98), #010b16),
+    #010f1f;
+  box-shadow: inset 0 1px 0 rgba(137, 206, 255, 0.12);
+}
+
+.aqua-site-footer__copyright {
+  color: #bdc8d2;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+@media (min-width: 768px) {
+  .aqua-system-card:hover {
+    border-color: rgba(137, 206, 255, 0.3);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.035),
+      0 22px 62px rgba(0, 0, 0, 0.22),
+      0 0 24px rgba(0, 180, 255, 0.06);
+  }
+}
+
+@media (max-width: 1023px) {
+  .aqua-trust-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --aqua-section-space: 4rem;
+    --aqua-section-title: clamp(2rem, 10vw, 2.65rem);
+    --aqua-panel-radius: 1.35rem;
+  }
+
+  main > section {
+    scroll-margin-top: 5.5rem;
+  }
+
+  .aqua-section__header,
+  .aqua-complexity-flow__header,
+  .aqua-service-paths__header,
+  .aqua-product-showcase__header {
+    margin-bottom: 2.25rem;
+  }
+
+  .aqua-trust-grid,
+  .aqua-faq-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .aqua-section__intro,
+  .aqua-complexity-flow__header p,
+  .aqua-service-paths__header p,
+  .aqua-product-showcase__intro {
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .faq-item,
+  .aqua-system-card {
+    transition: none;
+  }
+}

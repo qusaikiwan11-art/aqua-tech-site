@@ -1,0 +1,19 @@
+HP-10 — Compact Footer
+
+Prerequisite:
+- HP-07R, HP-08 and HP-09 pending changes have already been applied on main at commit 601e818.
+
+Files included in the package:
+- HP10_MANIFEST.txt
+- dist/output.css
+- docs/BATCH_HP_10_COMPACT_FOOTER.md
+- index.html
+- src/partials/footer.html
+- src/template.html
+
+Outcome:
+- The desktop footer is substantially shorter without removing content.
+- Vertical padding, column gaps, heading gaps and the copyright row are compacted.
+- Social controls are reduced from 44px to 40px.
+- Existing links, bilingual translation, RTL/LTR behavior and accessibility labels remain intact.
+- HP-09 navigation and site-wide pointer motion remain unchanged.

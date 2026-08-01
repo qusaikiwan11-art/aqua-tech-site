@@ -1,0 +1,25 @@
+HP-09 — Smooth Ordered Navigation and Site-wide Pointer Glow
+
+Prerequisite:
+- HP-07R and HP-08 pending changes have already been applied on main at commit 601e818.
+
+Files included in the package:
+- HP09_MANIFEST.txt
+- css/aqua-navigation.css
+- dist/output.css
+- docs/BATCH_HP_09_SMOOTH_NAVIGATION_POINTER.md
+- index.html
+- js/aqua-motion-system.js
+- js/aqua-navigation.js
+- src/partials/head.html
+- src/partials/header.html
+- src/partials/scripts.html
+- src/template.html
+
+Outcome:
+- Desktop and mobile navigation match the actual homepage section order.
+- Section links use header-aware smooth scrolling.
+- The current section is highlighted while scrolling.
+- The former large hero-only pointer light is replaced by a smaller site-wide glow.
+- Pointer polish is disabled for touch, narrow screens, reduced motion and data-saving mode.
+- Retired offers, marketing security and duplicate support sections remain removed.

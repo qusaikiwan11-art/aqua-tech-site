@@ -1,0 +1,19 @@
+HP-10R — Restore Compact Footer Content
+
+Prerequisite:
+- HP-10 is already applied over the pending HP-07R, HP-08 and HP-09 changes.
+
+Files included in the package:
+- HP10R_MANIFEST.txt
+- dist/output.css
+- docs/BATCH_HP_10R_RESTORE_COMPACT_FOOTER_CONTENT.md
+- index.html
+- src/partials/footer.html
+- src/template.html
+
+Outcome:
+- Every intended footer text label is visible again.
+- Removed homepage sections remain removed.
+- Former retired-section labels route to the closest current live content.
+- Footer typography, spacing, logo and social controls are smaller than HP-10.
+- Bilingual translation, RTL/LTR, copyright text and HP-09 motion remain intact.

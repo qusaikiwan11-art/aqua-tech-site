@@ -63,8 +63,6 @@ for (const section of sections) {
     "about",
     "services",
     "solutions",
-    "results",
-    "security",
     "faq",
     "contact"
   ];
@@ -94,8 +92,6 @@ const cleanMain = `<main class="pt-20" id="top">
 {{> about}}
 {{> services}}
 {{> solutions}}
-{{> results}}
-{{> security}}
 {{> faq}}
 {{> contact}}
 </main>
@@ -132,8 +128,6 @@ console.log("- overview.html");
 console.log("- about.html");
 console.log("- services.html");
 console.log("- solutions.html");
-console.log("- results.html");
-console.log("- security.html");
 console.log("- faq.html");
 console.log("- contact.html");
 console.log("- footer.html");

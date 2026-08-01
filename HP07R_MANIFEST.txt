@@ -1,0 +1,21 @@
+HP-07R — Remove Offers and Security Sections
+
+Base commit: 601e818
+
+Files included in the package:
+- HP07R_MANIFEST.txt
+- dist/output.css
+- docs/BATCH_HP_07R_REMOVE_OFFERS_SECURITY.md
+- index.html
+- scripts/build-html.js
+- scripts/split-main-sections.js
+- src/partials/footer.html
+- src/partials/header.html
+- src/partials/main.html
+
+Files removed during application:
+- src/partials/results.html
+- src/partials/security.html
+
+The Content-Security-Policy, referrer policy, security.txt, and other technical
+security controls are intentionally preserved.
