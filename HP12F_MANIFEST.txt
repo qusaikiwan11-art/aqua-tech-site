@@ -1,0 +1,18 @@
+Batch: HP-12F
+Title: Final compact footer correction
+Base snapshot commit: 8a519babb37da7f12664f35249ba5625fbb58d14
+
+Files:
+- src/partials/footer.html
+- src/input.css
+- index.html
+- dist/output.css
+- docs/BATCH_HP_12F_FINAL_COMPACT_FOOTER.md
+
+Outcome:
+- Compact footer height is controlled by dedicated component CSS.
+- Copyright is immediately attached to the main footer content.
+- Instagram, Facebook, LinkedIn and GitHub use recognizable SVG marks.
+- Brand mark and Aqua.Tech wordmark behave as one visual unit.
+- Every internal footer destination resolves to a live homepage section.
+- Arabic, English, RTL and LTR behavior are preserved.
