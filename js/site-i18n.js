@@ -277,7 +277,7 @@
       "nav.faq": "الأسئلة",
       "nav.contact": "تواصل",
       "nav.start": "ابدأ مشروعك",
-      "hero.kicker": "برمجيات • أتمتة • ذكاء اصطناعي",
+      "hero.kicker": "Software • Automation • AI",
       "hero.title": "نحوّل التعقيد",
       "hero.titleAccent": "إلى تدفّق.",
       "hero.subtitle":
@@ -289,7 +289,7 @@
       "hero.proof3": "أتمتة وذكاء اصطناعي",
       "hero.runtimeLabel": "Aqua Flow Engine",
       "hero.runtimeMeta": "مترابط • مؤتمت • قابل للقياس",
-      "flow.kicker": "منهج Aqua.Tech",
+      "flow.kicker": "Aqua.Tech method",
       "flow.title": "كيف نحوّل التعقيد إلى تدفّق قابل للقياس",
       "flow.description":
         "Aqua.Tech وكالة برمجية تبني مواقع وأنظمة وأتمتة تبدأ من مشكلة العمل الفعلية، ثم تربط التجربة والبيانات والتنفيذ في مسار واحد قابل للمتابعة والتحسين.",
@@ -349,7 +349,7 @@
       "about.card4.desc":
         "نتابع النتائج والملاحظات لنطوّر الحل بدل أن يبقى مجرد نسخة أولى.",
 
-      "trust.kicker": "لماذا Aqua.Tech",
+      "trust.kicker": "Why Aqua.Tech",
       "trust.title": "لماذا تختار Aqua.Tech",
       "form.submit": "ابدأ مشروعك بخطة واضحة",
 
@@ -515,7 +515,7 @@
       "contact.socials": "حسابات التواصل",
 
       "services.kicker": "What we build",
-      "services.title": "خدمات رقمية تركّز على النمو",
+      "services.title": "خدمات رقمية تركز على النمو",
       "services.subtitle":
         "نغطي رحلة مشروعك من الفكرة إلى الإطلاق والنمو المستمر بحلول واضحة قابلة للتنفيذ.",
 
@@ -826,7 +826,7 @@
       "hero.proof3": "Automation and AI",
       "hero.runtimeLabel": "Aqua Flow Engine",
       "hero.runtimeMeta": "Connected • Automated • Measurable",
-      "flow.kicker": "The Aqua.Tech method",
+      "flow.kicker": "Aqua.Tech method",
       "flow.title": "How we turn complexity into measurable flow",
       "flow.description":
         "Aqua.Tech is a software agency that builds websites, systems, and automation around the real operational problem, then connects experience, data, and execution in one flow that can be tracked and improved.",

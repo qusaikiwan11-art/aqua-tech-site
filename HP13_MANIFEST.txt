@@ -1,0 +1,28 @@
+Aqua.Tech HP-13R3 — Mobile Hero Scale Correction + Floating Header Preservation
+
+Base commit:
+d429791e57687b4d0c99c8bdb95d67bc8bd3c982
+
+Files included:
+- HP13_MANIFEST.txt
+- docs/BATCH_HP_13_MOBILE_HERO_TITLE_CLIPPING_FIX.md
+- index.html
+- src/partials/header.html
+- src/template.html
+
+Validation:
+- Production build passes
+- Generated index.html contains the source fix
+- Mobile hero content is constrained to the viewport
+- Mobile title scale now follows the viewport with a 2.85rem hard cap
+- Mobile subtitle uses a centered 22rem reading column
+- Safe-area-aware horizontal padding is enabled
+- Arabic title paint-safe spacing and 1.22 mobile line-height remain enabled
+- Title and subtitle blur are disabled on mobile to prevent compositor clipping
+- Hero entrance opacity and translate motion remain enabled
+- Floating pill header is restored after every production build
+- HP-13R2 floating pill header markup remains unchanged
+- Header keeps the six live navigation links in desktop and mobile layouts
+- Retired offers, security, and support links remain removed
+- JavaScript syntax checks pass
+- Whitespace validation passes

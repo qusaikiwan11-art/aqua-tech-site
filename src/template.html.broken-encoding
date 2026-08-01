@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html class="dark" dir="rtl" lang="ar">
   <head>
     <meta charset="utf-8" />
@@ -2279,7 +2279,7 @@
                 class="font-headline-lg text-headline-lg md:text-headline-xl"
                 data-i18n="services.title"
               >
-                خدمات رقمية تركّز على النمو
+                خدمات رقمية تركز على النمو
               </h2>
             </div>
 
@@ -3333,7 +3333,7 @@
             </article>
           </div>
 
-          
+
       </section>
       <section class="py-section-padding" id="security">
         <div class="max-w-container-max mx-auto px-margin-mobile md:px-20">
@@ -4373,7 +4373,7 @@ label.textContent = option.textContent.trim();
     </script>
 
     \n
-  
+
     <script src="./js/aquatech-contact-client.js" defer></script>
 </body>
 </html>

@@ -1937,10 +1937,63 @@
       @media (max-width: 560px) {
         .aqua-signature-hero {
           padding-top: 6.6rem;
+          padding-right: max(1rem, env(safe-area-inset-right));
+          padding-left: max(1rem, env(safe-area-inset-left));
+        }
+
+        .aqua-hero-shell,
+        .aqua-hero-copy {
+          width: min(100%, calc(100dvw - 2rem));
+          min-width: 0;
+          max-width: calc(100vw - 2rem);
+          margin-inline: auto;
+        }
+
+        .aqua-hero-copy > * {
+          max-width: 100%;
         }
 
         .aqua-hero-title {
-          font-size: clamp(2.55rem, 13.4vw, 3.75rem);
+          width: 100%;
+          max-width: 22rem;
+          margin-inline: auto;
+          font-size: clamp(2.05rem, 10.5vw, 2.85rem);
+          overflow: visible;
+          text-align: center;
+          text-wrap: balance;
+        }
+
+        html[dir="rtl"] .aqua-hero-title {
+          line-height: 1.22;
+        }
+
+        html[dir="rtl"] .aqua-hero-title > span {
+          width: fit-content;
+          max-width: 100%;
+          margin-inline: auto;
+          overflow: visible;
+          padding-block: 0.1em 0.06em;
+          margin-block: -0.1em -0.06em;
+          white-space: normal;
+        }
+
+        .aqua-hero-subtitle {
+          width: min(100%, 22rem);
+          max-width: 22rem;
+          margin-inline: auto;
+          padding-inline: 0;
+          box-sizing: border-box;
+          font-size: clamp(0.9rem, 3.8vw, 1rem);
+          line-height: 1.85;
+          text-align: center;
+          white-space: normal;
+          overflow-wrap: break-word;
+          text-wrap: balance;
+        }
+
+        html.aqua-hero-motion .aqua-hero-title > span,
+        html.aqua-hero-motion .aqua-hero-subtitle {
+          filter: none;
         }
 
         .aqua-hero-actions {
@@ -2105,14 +2158,6 @@
 
           <a
             class="nav-link text-on-surface-variant hover:text-primary transition-colors"
-            href="#offers"
-            data-i18n="nav.offers"
-          >
-            العروض</a
-          >
-
-          <a
-            class="nav-link text-on-surface-variant hover:text-primary transition-colors"
             href="#faq"
             data-aqua-nav
             data-i18n="nav.faq"
@@ -2237,14 +2282,6 @@
           >
 
           <a
-            class="rounded-lg px-4 py-3 text-on-surface-variant hover:bg-primary/10 hover:text-primary"
-            href="#offers"
-            data-i18n="nav.offers"
-          >
-            العروض</a
-          >
-
-          <a
             class="aqua-mobile-nav-link rounded-lg px-4 py-3 text-on-surface-variant hover:bg-primary/10 hover:text-primary"
             href="#faq"
             data-aqua-nav
@@ -2351,7 +2388,7 @@
           <div class="aqua-hero-copy">
             <div class="aqua-hero-kicker">
               <span class="aqua-hero-status-dot" aria-hidden="true"></span>
-              <span data-i18n="hero.kicker">برمجيات • أتمتة • ذكاء اصطناعي</span>
+              <span data-i18n="hero.kicker">Software • Automation • AI</span>
             </div>
 
             <h1 id="hero-title" class="aqua-hero-title">
@@ -2464,7 +2501,7 @@
   <div class="aqua-complexity-flow__container">
     <header class="aqua-complexity-flow__header">
       <span class="section-kicker" data-i18n="flow.kicker">
-        منهج Aqua.Tech
+       Aqua.Tech method
       </span>
 
       <h2 id="complexityFlowTitle" data-i18n="flow.title">
@@ -2751,7 +2788,7 @@
                 class="font-headline-lg text-headline-lg md:text-headline-xl"
                 data-i18n="services.title"
               >
-                خدمات رقمية تركّز على النمو
+                خدمات رقمية تركز على النمو
               </h2>
             </div>
 
