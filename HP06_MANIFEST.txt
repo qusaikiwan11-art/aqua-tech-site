@@ -1,0 +1,30 @@
+HP-06 — Product Showcase Flow
+
+Base commit:
+1df4e4a feat: unify homepage services and motion
+
+Added:
+css/aqua-product-showcase.css
+docs/BATCH_HP_06_PRODUCT_SHOWCASE_FLOW.md
+HP06_MANIFEST.txt
+
+Modified:
+dist/output.css
+index.html
+js/site-i18n.js
+scripts/build-html.js
+src/partials/head.html
+src/partials/solutions.html
+
+Required markers:
+aqua-product-showcase.css?v=hp06
+class="aqua-product-showcase"
+class="aqua-product-grid"
+data-product="viresto"
+data-product="resumeiq"
+data-product="smart-attendance"
+data-product="university-projects"
+solutions.note
+
+Production command:
+npm run build

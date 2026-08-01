@@ -56,6 +56,7 @@ const template = fs.readFileSync(templatePath, "utf8");
 let html = renderPartials(template);
 
 html = replaceSectionWithPartial(html, "services", "services");
+html = replaceSectionWithPartial(html, "solutions", "solutions");
 
 fs.writeFileSync(outputPath, html.trimEnd() + "\n", "utf8");
 

@@ -382,31 +382,38 @@
       "solutions.subtitle":
         "أنظمة ومنصات جاهزة يمكن تخصيصها بحسب نوع النشاط والمرحلة الحالية لمشروعك.",
 
-      "solutions.law.title": "viresto",
+      "solutions.law.title": "Viresto",
+      "solutions.law.type": "تشغيل المكاتب القانونية",
       "solutions.law.desc":
         "نظام لإدارة القضايا والعملاء والمواعيد والملفات القانونية بشكل أوضح.",
       "solutions.law.point1": "إدارة الملفات",
       "solutions.law.point2": "متابعة المواعيد",
 
       "solutions.resume.title": "ResumeIQ",
+      "solutions.resume.type": "ذكاء المسار المهني",
       "solutions.resume.desc":
         "أداة تساعد المستخدم على إنشاء سيرة ذاتية بشكل أوضح وأسرع وتجربة أسهل.",
       "solutions.resume.point1": "بناء ذكي للسيرة",
       "solutions.resume.point2": "قوالب احترافية",
 
       "solutions.attendance.title": "Smart Attendance",
+      "solutions.attendance.type": "أتمتة إدارة الحضور",
       "solutions.attendance.desc":
         "نظام حضور ذكي يعتمد على التعرف على الوجوه لتسجيل الحضور تلقائيًا.",
       "solutions.attendance.point1": "التعرف على الوجوه",
       "solutions.attendance.point2": "تقارير فورية",
 
       "solutions.university.title": "University projects platform",
+      "solutions.university.type": "سير العمل الأكاديمي",
       "solutions.university.desc":
         "منصة لتنظيم مشاريع الطلبة ورفع الملفات ومتابعة الفرق والإشراف الأكاديمي.",
       "solutions.university.point1": "تنظيم الفرق",
       "solutions.university.point2": "متابعة التقييم",
 
       "solutions.cta": "اطلب النظام",
+      "solutions.note":
+        "يمكن تكييف كل منتج مع سير عملك وهويتك وطريقة تشغيلك.",
+      "solutions.noteCta": "ناقش التخصيص",
 
       "results.kicker": "Proven results",
       "results.title": "نتائج يمكننا تحقيقها معك",
@@ -907,7 +914,8 @@
       "solutions.subtitle":
         "Ready systems and platforms that can be customized based on your business type and current project stage.",
 
-      "solutions.law.title": "Law firm management",
+      "solutions.law.title": "Viresto",
+      "solutions.law.type": "Legal operations",
       "solutions.law.desc":
         "A system for managing cases, clients, appointments, and legal files in a clearer way.",
       "solutions.law.point1": "File management",
@@ -915,24 +923,30 @@
       "form.submit": "Start your project with a clear plan",
 
       "solutions.resume.title": "ResumeIQ",
+      "solutions.resume.type": "Career intelligence",
       "solutions.resume.desc":
         "A tool that helps users create resumes more clearly, faster, and with an easier experience.",
       "solutions.resume.point1": "Smart resume builder",
       "solutions.resume.point2": "Professional templates",
 
       "solutions.attendance.title": "Smart Attendance",
+      "solutions.attendance.type": "Workforce automation",
       "solutions.attendance.desc":
         "A smart attendance system based on face recognition to register attendance automatically.",
       "solutions.attendance.point1": "Face recognition",
       "solutions.attendance.point2": "Instant reports",
 
       "solutions.university.title": "University projects platform",
+      "solutions.university.type": "Academic workflow",
       "solutions.university.desc":
         "A platform for organizing student projects, uploading files, tracking teams, and academic supervision.",
       "solutions.university.point1": "Team organization",
       "solutions.university.point2": "Evaluation tracking",
 
       "solutions.cta": "Request the system",
+      "solutions.note":
+        "Every product can be adapted to your workflow, brand, and operating model.",
+      "solutions.noteCta": "Discuss adaptation",
 
       "results.kicker": "Proven results",
       "results.title": "Results we can achieve with you",
