@@ -1,0 +1,159 @@
+:root {
+  --aqua-motion-duration: 920ms;
+  --aqua-motion-fade: 660ms;
+  --aqua-motion-fast: 220ms;
+  --aqua-motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --aqua-motion-distance: 24px;
+  --aqua-motion-glow: rgba(0, 180, 255, 0.14);
+}
+
+.aqua-motion-progress {
+  position: fixed;
+  z-index: 80;
+  inset: 0 0 auto;
+  height: 2px;
+  pointer-events: none;
+  transform: scaleX(var(--aqua-scroll-progress, 0));
+  transform-origin: left center;
+  background: linear-gradient(90deg, #65e2d8, #89ceff 58%, #00b4ff);
+  box-shadow: 0 0 14px rgba(0, 180, 255, 0.52);
+  will-change: transform;
+}
+
+html[dir="rtl"] .aqua-motion-progress {
+  transform-origin: right center;
+}
+
+html.aqua-motion-ready [data-aqua-motion] {
+  opacity: 0;
+  transform: translate3d(0, var(--aqua-motion-distance), 0) scale(0.992);
+  filter: blur(3px);
+  transition:
+    opacity var(--aqua-motion-duration) var(--aqua-motion-ease),
+    transform var(--aqua-motion-duration) var(--aqua-motion-ease),
+    filter var(--aqua-motion-fade) ease;
+  transition-delay: var(--aqua-motion-delay, 0ms);
+}
+
+html.aqua-motion-ready [data-aqua-motion="from-start"] {
+  transform: translate3d(var(--aqua-motion-inline-start, -22px), 0, 0);
+}
+
+html[dir="rtl"].aqua-motion-ready [data-aqua-motion="from-start"] {
+  --aqua-motion-inline-start: 22px;
+}
+
+html.aqua-motion-ready [data-aqua-motion].is-aqua-motion-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
+  filter: blur(0);
+}
+
+html.aqua-motion-ready [data-aqua-motion].is-aqua-motion-complete {
+  transition-delay: 0ms;
+}
+
+:where(
+  .glass-card,
+  .service-card,
+  .solution-card,
+  .result-card,
+  .contact-card,
+  .aqua-service-path,
+  .aqua-service-paths__decision,
+  .aqua-flow-panel,
+  .aqua-flow-zone,
+  .aqua-flow-proof,
+  .aqua-flow-outcome,
+  .faq-item
+) {
+  transition:
+    transform var(--aqua-motion-fast) var(--aqua-motion-ease),
+    border-color var(--aqua-motion-fast) ease,
+    background-color var(--aqua-motion-fast) ease,
+    box-shadow var(--aqua-motion-fast) ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  :where(
+    .glass-card,
+    .service-card,
+    .solution-card,
+    .result-card,
+    .contact-card,
+    .aqua-service-path,
+    .aqua-service-paths__decision,
+    .aqua-flow-zone,
+    .aqua-flow-proof,
+    .aqua-flow-outcome,
+    .faq-item
+  ):hover {
+    transform: translate3d(0, -4px, 0);
+  }
+
+  :where(
+    .service-cta-btn,
+    .aqua-service-path__cta,
+    .aqua-service-paths__decision-cta,
+    a[href^="https://wa.me"],
+    a[href^="mailto:"]
+  ) {
+    transition:
+      transform var(--aqua-motion-fast) var(--aqua-motion-ease),
+      color var(--aqua-motion-fast) ease,
+      border-color var(--aqua-motion-fast) ease,
+      background var(--aqua-motion-fast) ease,
+      box-shadow var(--aqua-motion-fast) ease;
+  }
+
+  :where(
+    .service-cta-btn,
+    .aqua-service-path__cta,
+    .aqua-service-paths__decision-cta,
+    a[href^="https://wa.me"],
+    a[href^="mailto:"]
+  ):hover {
+    transform: translate3d(0, -2px, 0);
+  }
+}
+
+.aqua-motion-focus:focus-visible {
+  outline: 3px solid rgba(137, 206, 255, 0.58);
+  outline-offset: 4px;
+}
+
+@media (max-width: 767px), (pointer: coarse) {
+  .aqua-motion-progress {
+    display: none;
+  }
+
+  .aqua-bg-ambient span,
+  .aqua-liquid-bg::before,
+  .aqua-liquid-bg::after {
+    animation: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+
+  .aqua-motion-progress {
+    display: none;
+  }
+
+  html.aqua-motion-ready [data-aqua-motion],
+  html.aqua-motion-ready [data-aqua-motion="from-start"] {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    transition: none !important;
+  }
+
+  .aqua-bg-ambient span,
+  .aqua-liquid-bg::before,
+  .aqua-liquid-bg::after {
+    animation: none !important;
+  }
+}

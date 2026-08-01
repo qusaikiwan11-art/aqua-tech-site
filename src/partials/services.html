@@ -1,235 +1,134 @@
-<section class="py-16 bg-surface-container-low/30" id="services">
-  <div class="max-w-container-max mx-auto px-margin-mobile md:px-20">
-    <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
-      <div>
-        <span class="section-kicker">What we build</span>
-        <h2 class="font-headline-lg text-headline-lg md:text-headline-xl">
-          الخدمات التي نقدمها للنمو
-        </h2>
-      </div>
+<section class="aqua-service-paths" id="services" aria-labelledby="services-title">
+  <div class="aqua-service-paths__glow" aria-hidden="true"></div>
 
-      <p class="font-body-md text-body-md text-on-surface-variant max-w-md">
-        نغطي كامل رحلة مشروعك من الفكرة حتى الإطلاق والنمو المستمر.
+  <div class="aqua-service-paths__container">
+    <header class="aqua-service-paths__header">
+      <span class="section-kicker" data-i18n="services.kicker">What we build</span>
+      <h2 id="services-title" data-i18n="services.title">
+        خدمات رقمية تركّز على النمو
+      </h2>
+      <p data-i18n="services.subtitle">
+        نغطي رحلة مشروعك من الفكرة إلى الإطلاق والنمو المستمر بحلول واضحة قابلة للتنفيذ.
       </p>
-    </div>
+    </header>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6">
-      <!-- Landing Page -->
-      <article class="lg:col-span-7 glass-card p-7 rounded-2xl relative overflow-hidden group flex flex-col h-full border-primary/20">
-        <div class="absolute top-0 left-0 w-1/2 h-full bg-gradient-to-r from-primary/10 to-transparent"></div>
-
-        <div class="relative z-10 flex flex-col h-full">
-          <div class="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center mb-6 text-primary">
-            <span class="material-symbols-outlined">ads_click</span>
-          </div>
-
-          <h3 class="font-headline-md text-headline-md mb-4">
-            صفحات تسويقية احترافية
-          </h3>
-
-          <p class="font-body-md text-on-surface-variant mb-6 leading-relaxed max-w-xl">
-            صفحات تسويقية احترافية وسريعة تساعدك تبدأ الإعلان وجمع العملاء خلال وقت قصير.
-          </p>
-
-          <div class="flex flex-wrap gap-2 mb-8">
-            <span class="px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm">Landing</span>
-            <span class="px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm">WhatsApp</span>
-            <span class="px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm">Tracking</span>
-          </div>
-
-          <a
-            class="service-cta-btn js-service-cta"
-            data-service="landing-page"
-            href="#contact"
-          >
-            <span>اطلب صفحتك الآن</span>
-            <span class="material-symbols-outlined btn-icon">west</span>
-          </a>
-        </div>
-      </article>
-
-      <!-- Websites -->
-      <article class="lg:col-span-5 glass-card p-7 rounded-2xl group flex flex-col h-full">
-        <div class="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center mb-6 text-primary">
-          <span class="material-symbols-outlined">language</span>
+    <div class="aqua-service-paths__grid">
+      <article class="aqua-service-path aqua-service-path--core">
+        <div class="aqua-service-path__topline">
+          <span class="aqua-service-path__number">01</span>
+          <span class="aqua-service-path__kicker" data-i18n="services.core.kicker">
+            Core Services
+          </span>
         </div>
 
-        <h3 class="font-headline-md text-headline-md mb-4">
-          مواقع ومتاجر
-        </h3>
+        <div class="aqua-service-path__icon" aria-hidden="true">
+          <span class="material-symbols-outlined">deployed_code</span>
+        </div>
 
-        <p class="font-body-md text-on-surface-variant mb-6 leading-relaxed">
-          نبني مواقع شركات ومتاجر وصفحات خدمات تركّز على الثقة والسرعة.
+        <h3 data-i18n="services.core.title">البناء الأساسي للمشروع</h3>
+        <p class="aqua-service-path__description" data-i18n="services.core.desc">
+          مواقع، صفحات تسويقية، أنظمة، وأتمتة تساعد مشروعك يبدأ بشكل واضح وقابل للتوسع.
         </p>
 
-        <div class="flex flex-wrap gap-2 mb-8">
-          <span class="px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm">SEO</span>
-          <span class="px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm">CMS</span>
-          <span class="px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm">React</span>
-        </div>
+        <ul class="aqua-service-path__list">
+          <li data-i18n="services.details.core.item1">صفحات تسويقية للإعلانات وجمع الطلبات</li>
+          <li data-i18n="services.details.core.item2">مواقع شركات ومتاجر وصفحات خدمات</li>
+          <li data-i18n="services.details.core.item3">أنظمة ولوحات تحكم مخصصة</li>
+          <li data-i18n="services.details.core.item4">بوتات وعمليات أتمتة وربط أدوات</li>
+        </ul>
 
         <a
-          class="service-cta-btn js-service-cta"
-          data-service="company-website"
+          class="aqua-service-path__cta"
           href="#contact"
         >
-          <span>استكشف المزيد</span>
-          <span class="material-symbols-outlined btn-icon">west</span>
+          <span data-i18n="hero.ctaPrimary">ابدأ مشروعك</span>
+          <span class="aqua-service-path__cta-mark" aria-hidden="true"></span>
         </a>
       </article>
 
-      <!-- AI -->
-      <article class="lg:col-span-4 glass-card p-7 rounded-2xl group flex flex-col h-full">
-        <div class="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center mb-6 text-primary">
-          <span class="material-symbols-outlined">smart_toy</span>
-        </div>
-
-        <h3 class="font-headline-md text-headline-md mb-4">
-          الذكاء الاصطناعي
-        </h3>
-
-        <p class="font-body-md text-on-surface-variant mb-6 leading-relaxed">
-          نساعدك تبني بوتات ومهام تلقائية لتسريع الردود وتقليل العمل اليدوي.
-        </p>
-
-        <div class="flex flex-wrap gap-2 mb-8">
-          <span class="px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm">AI Agent</span>
-          <span class="px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm">Automation</span>
-        </div>
-
-        <a
-          class="service-cta-btn js-service-cta"
-          data-service="ai-agent"
-          href="#contact"
-        >
-          <span>جرب الأتمتة</span>
-          <span class="material-symbols-outlined btn-icon">west</span>
-        </a>
-      </article>
-
-      <!-- Custom Systems -->
-      <article class="lg:col-span-8 glass-card p-7 rounded-2xl relative overflow-hidden group flex flex-col h-full border-primary/30">
-        <div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_70%_30%,rgba(0,180,255,.45),transparent_36%)]"></div>
-
-        <div class="relative z-10 flex flex-col h-full">
-          <div class="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center mb-6 text-primary">
-            <span class="material-symbols-outlined">terminal</span>
-          </div>
-
-          <h3 class="font-headline-md text-headline-md mb-4">
-            أنظمة ولوحات تحكم مخصصة
-          </h3>
-
-          <p class="font-body-md text-on-surface-variant mb-6 leading-relaxed max-w-xl">
-            أنظمة داخلية، أتمتة، وتكاملات API لتوفير الوقت والتكلفة لمشروعك.
-          </p>
-
-          <div class="flex flex-wrap gap-2 mb-8">
-            <span class="px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm">Dashboard</span>
-            <span class="px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm">API</span>
-            <span class="px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm">Automation</span>
-          </div>
-
-          <a
-            class="service-cta-btn service-cta-btn-primary js-service-cta"
-            data-service="custom-system"
-            href="#contact"
+      <article class="aqua-service-path aqua-service-path--growth">
+        <div class="aqua-service-path__topline">
+          <span class="aqua-service-path__number">02</span>
+          <span
+            class="aqua-service-path__kicker"
+            data-i18n="services.growthGroup.kicker"
           >
-            <span>تحدث مع خبير</span>
-            <span class="material-symbols-outlined btn-icon">west</span>
-          </a>
+            Growth Services
+          </span>
         </div>
-      </article>
 
-      <!-- Growth -->
-      <article class="lg:col-span-4 glass-card p-7 rounded-2xl group flex flex-col h-full">
-        <div class="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center mb-6 text-primary">
+        <div class="aqua-service-path__icon" aria-hidden="true">
           <span class="material-symbols-outlined">trending_up</span>
         </div>
 
-        <h3 class="font-headline-md text-headline-md mb-4">
-          باقات نمو وتسويق رقمي
-        </h3>
-
-        <p class="font-body-md text-on-surface-variant mb-6 leading-relaxed">
-          ندعم نمو مشروعك بخطة محتوى، إعلانات، وتحسين ظهور يساعدك على تحويل الزوار إلى عملاء.
+        <h3 data-i18n="services.growthGroup.title">النمو والتحويل</h3>
+        <p
+          class="aqua-service-path__description"
+          data-i18n="services.growthGroup.desc"
+        >
+          سوشيال ميديا، حملات، تحسين التحويل، وتصميم يربط الحضور الرقمي بالطلبات.
         </p>
 
-        <div class="flex flex-wrap gap-2 mb-8">
-          <span class="px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm">Content</span>
-          <span class="px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm">Ads</span>
-          <span class="px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm">Growth</span>
-        </div>
+        <ul class="aqua-service-path__list">
+          <li data-i18n="services.details.growth.item1">إدارة السوشيال ميديا وخطط المحتوى</li>
+          <li data-i18n="services.details.growth.item2">حملات إعلانية وتحسين صفحات التسويق</li>
+          <li data-i18n="services.details.growth.item3">تحسين التحويل وتتبع النتائج</li>
+          <li data-i18n="services.details.growth.item4">واجهات وهوية بصرية للمشاريع الرقمية</li>
+        </ul>
 
         <a
-          class="service-cta-btn js-service-cta"
-          data-service="ads"
+          class="aqua-service-path__cta"
           href="#contact"
         >
-          <span>شاهد باقات النمو</span>
-          <span class="material-symbols-outlined btn-icon">west</span>
+          <span data-i18n="hero.ctaPrimary">ابدأ مشروعك</span>
+          <span class="aqua-service-path__cta-mark" aria-hidden="true"></span>
         </a>
       </article>
 
-      <!-- Social Media -->
-      <article class="lg:col-span-4 glass-card p-7 rounded-2xl group flex flex-col h-full border-primary/20">
-        <div class="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center mb-6 text-primary">
-          <span class="material-symbols-outlined">campaign</span>
+      <article class="aqua-service-path aqua-service-path--care">
+        <div class="aqua-service-path__topline">
+          <span class="aqua-service-path__number">03</span>
+          <span class="aqua-service-path__kicker" data-i18n="services.care.kicker">
+            Care Services
+          </span>
         </div>
 
-        <h3 class="font-headline-md text-headline-md mb-4">
-          إدارة حسابات السوشيال ميديا
-        </h3>
+        <div class="aqua-service-path__icon" aria-hidden="true">
+          <span class="material-symbols-outlined">support_agent</span>
+        </div>
 
-        <p class="font-body-md text-on-surface-variant mb-6 leading-relaxed">
-          نجهز لك خطة محتوى، تصاميم، وجدولة تساعدك تبني حضور ثابت وتحول المتابعين إلى عملاء محتملين.
+        <h3 data-i18n="services.care.title">الدعم والتحسين المستمر</h3>
+        <p class="aqua-service-path__description" data-i18n="services.care.desc">
+          صيانة، دعم، تحسينات، وتقارير تحافظ على أداء الحل بعد الإطلاق وتطوره مع الوقت.
         </p>
 
-        <div class="flex flex-wrap gap-2 mb-8">
-          <span class="px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm">Social</span>
-          <span class="px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm">Design</span>
-          <span class="px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm">Reports</span>
-        </div>
+        <ul class="aqua-service-path__list">
+          <li data-i18n="services.details.care.item1">صيانة وتحديثات بعد الإطلاق</li>
+          <li data-i18n="services.details.care.item2">دعم فني ومعالجة ملاحظات</li>
+          <li data-i18n="services.details.care.item3">تحسينات مستمرة على الأداء والتجربة</li>
+          <li data-i18n="services.details.care.item4">تقارير شهرية وخطوات تطوير مقترحة</li>
+        </ul>
 
         <a
-          class="service-cta-btn js-service-cta"
-          data-service="social-management"
+          class="aqua-service-path__cta"
           href="#contact"
         >
-          <span>ابدأ إدارة حساباتك</span>
-          <span class="material-symbols-outlined btn-icon">west</span>
+          <span data-i18n="hero.ctaPrimary">ابدأ مشروعك</span>
+          <span class="aqua-service-path__cta-mark" aria-hidden="true"></span>
         </a>
       </article>
+    </div>
 
-      <!-- Design -->
-      <article class="lg:col-span-4 glass-card p-7 rounded-2xl group flex flex-col h-full">
-        <div class="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center mb-6 text-primary">
-          <span class="material-symbols-outlined">draw</span>
-        </div>
-
-        <h3 class="font-headline-md text-headline-md mb-4">
-          تصميم واجهات وهوية بصرية
-        </h3>
-
-        <p class="font-body-md text-on-surface-variant mb-6 leading-relaxed">
-          نصمم واجهات وتجارب وهوية بصرية تعطي مشروعك شكلًا احترافيًا وثقة أعلى أمام العملاء.
+    <div class="aqua-service-paths__decision">
+      <div>
+        <strong data-i18n="faq.q12">كيف أعرف أي خدمة مناسبة لي؟</strong>
+        <p data-i18n="faq.a12">
+          شاركنا هدفك الحالي، وسنحدد لك أسرع بداية مناسبة، وما الذي يجب بناؤه أولًا، وما الذي يمكن تأجيله بدون تكلفة غير ضرورية.
         </p>
-
-        <div class="flex flex-wrap gap-2 mb-8">
-          <span class="px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm">UI/UX</span>
-          <span class="px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm">Brand</span>
-          <span class="px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm">Visuals</span>
-        </div>
-
-        <a
-          class="service-cta-btn js-service-cta"
-          data-service="content-design"
-          href="#contact"
-        >
-          <span>شاهد الهوية المناسبة</span>
-          <span class="material-symbols-outlined btn-icon">west</span>
-        </a>
-      </article>
+      </div>
+      <a class="aqua-service-paths__decision-cta" href="#contact">
+        <span data-i18n="hero.ctaPrimary">ابدأ مشروعك</span>
+      </a>
     </div>
   </div>
 </section>

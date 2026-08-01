@@ -30,8 +30,32 @@ function renderPartials(input) {
   return html;
 }
 
+function replaceSectionWithPartial(html, id, partialName) {
+  const partialPath = path.join(partialsDir, `${partialName}.html`);
+
+  if (!fs.existsSync(partialPath)) {
+    throw new Error(`Missing partial: ${partialPath}`);
+  }
+
+  const pattern = new RegExp(
+    `<section\\b(?=[^>]*\\bid=["']${id}["'])[^>]*>[\\s\\S]*?<\\/section>`,
+    "gi",
+  );
+  const matches = html.match(pattern) || [];
+
+  if (matches.length !== 1) {
+    throw new Error(
+      `Expected exactly one #${id} section, found ${matches.length}`,
+    );
+  }
+
+  return html.replace(pattern, fs.readFileSync(partialPath, "utf8").trim());
+}
+
 const template = fs.readFileSync(templatePath, "utf8");
-const html = renderPartials(template);
+let html = renderPartials(template);
+
+html = replaceSectionWithPartial(html, "services", "services");
 
 fs.writeFileSync(outputPath, html.trimEnd() + "\n", "utf8");
 

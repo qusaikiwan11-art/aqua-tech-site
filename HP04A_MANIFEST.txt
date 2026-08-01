@@ -1,0 +1,19 @@
+HP-04A — Service Paths Visual Polish
+
+Required base:
+- HP-04 — Service Architecture
+
+Changed files:
+- css/aqua-service-paths.css
+- docs/BATCH_HP_04A_SERVICE_PATHS_VISUAL_POLISH.md
+- HP04A_MANIFEST.txt
+- index.html
+- src/partials/head.html
+- src/template.html
+
+Key markers:
+- aqua-service-paths.css?v=hp04a
+- scroll-margin-top: 8.25rem
+- min-height: 29.5rem
+- width: min(100% - 7rem, 92rem)
+- #wa-float desktop size 48px

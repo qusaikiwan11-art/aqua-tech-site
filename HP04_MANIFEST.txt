@@ -1,0 +1,22 @@
+HP-04 Service Architecture
+
+Adds:
+- css/aqua-service-paths.css
+- docs/BATCH_HP_04_SERVICE_ARCHITECTURE.md
+- HP04_MANIFEST.txt
+
+Updates:
+- dist/output.css
+- index.html
+- scripts/build-html.js
+- src/partials/head.html
+- src/partials/scripts.html
+- src/partials/services.html
+- src/template.html
+
+Scope:
+- Core / Growth / Care service paths
+- always-visible service lists
+- direct path CTAs to the detailed contact-form selector
+- responsive RTL/LTR presentation
+- reduced-motion safeguards

@@ -1,0 +1,13 @@
+HP-05 — Unified Motion System
+
+css/aqua-motion-system.css
+css/aqua-service-paths.css
+docs/BATCH_HP_05_UNIFIED_MOTION_SYSTEM.md
+dist/output.css
+HP05_MANIFEST.txt
+index.html
+js/aqua-motion-system.js
+src/partials/head.html
+src/partials/scripts.html
+src/partials/services.html
+src/template.html
