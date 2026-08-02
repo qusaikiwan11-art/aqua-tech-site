@@ -1,0 +1,29 @@
+Aqua.Tech Homepage Batch HP-14
+Trust Flow Panel
+
+Purpose
+- Redesign the #trust section so it follows the approved Aqua.Tech visual system.
+- Replace four heavy standalone cards with one cohesive glass flow panel.
+- Preserve all existing trust content and bilingual behavior.
+- Fix the Arabic trust card kicker that incorrectly displayed "Support".
+
+Files
+- HP14_MANIFEST.txt
+- docs/BATCH_HP_14_TRUST_FLOW_PANEL.md
+- src/partials/about.html
+- src/input.css
+- js/site-i18n.js
+- index.html
+- dist/output.css
+
+Required baseline
+- HP-11 unified homepage design system
+- HP-12F compact footer
+- HP-13R3 mobile Hero scale fix and floating header restoration
+
+Validation
+- npm run build
+- JavaScript syntax checks
+- Generated CSS marker checks
+- Header and Hero preservation checks
+- Arabic and English trust translation marker checks
