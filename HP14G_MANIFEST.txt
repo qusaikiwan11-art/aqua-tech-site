@@ -1,0 +1,17 @@
+Aqua.Tech Homepage HP-14G
+
+Purpose:
+- Keep the floating oval navigation bar unchanged.
+- Remove the full-width scrolled header background and shadow.
+- Keep the empty areas to the left and right of the pill fully transparent.
+
+Files:
+- css/aqua-navigation.css
+- docs/BATCH_HP_14G_FLOATING_HEADER_CLEAR_EDGES.md
+- HP14G_MANIFEST.txt
+
+Base commit:
+- 8ea7d0b feat: finalize homepage polish
+
+Commit and push:
+- Not performed

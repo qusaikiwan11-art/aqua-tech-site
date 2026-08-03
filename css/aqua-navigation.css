@@ -11,17 +11,11 @@ main > section[id] {
   scroll-margin-top: var(--aqua-header-offset);
 }
 
-body > header {
-  transition:
-    background-color 260ms ease,
-    border-color 260ms ease,
-    box-shadow 260ms ease;
-}
-
+body > header,
 body > header.is-aqua-header-scrolled {
-  background-color: rgba(5, 20, 36, 0.82);
-  border-color: rgba(137, 206, 255, 0.16);
-  box-shadow: 0 14px 46px rgba(0, 0, 0, 0.24);
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
 }
 
 .nav-link {
@@ -113,7 +107,6 @@ body > header.is-aqua-header-scrolled {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  body > header,
   .nav-link::after,
   .aqua-mobile-nav-link {
     transition: none !important;
