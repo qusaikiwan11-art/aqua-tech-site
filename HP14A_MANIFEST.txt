@@ -1,0 +1,23 @@
+Aqua.Tech Homepage Batch HP-14A
+Trust Step Marker Alignment
+
+Purpose
+- Correct the visual separation between each trust step number and its icon.
+- Keep each icon centered on the desktop connector line.
+- Present the number as a compact marker beside its matching icon.
+- Preserve the approved HP-14 panel, content, RTL/LTR order, and responsive layouts.
+
+Files
+- HP14A_MANIFEST.txt
+- docs/BATCH_HP_14A_TRUST_STEP_MARKER_ALIGNMENT.md
+- src/input.css
+- dist/output.css
+
+Required baseline
+- HP-14 trust flow panel applied and not yet committed
+
+Validation
+- npm run build
+- Generated CSS marker checks
+- Desktop and mobile responsive CSS checks
+- Existing HP-14 HTML and translation content preserved

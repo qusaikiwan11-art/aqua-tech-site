@@ -1,0 +1,16 @@
+Aqua.Tech Homepage — HP-14D
+Arabic hero title glyph-clearance fix
+
+Scope:
+- Prevent the Arabic gradient hero line from clipping at the top.
+- Preserve the existing hero font size, line height, spacing, and motion.
+- Preserve the HP-14A trust alignment, HP-14B English section labels,
+  and HP-14C zero-shadda copy.
+
+Files:
+- HP14D_MANIFEST.txt
+- docs/BATCH_HP_14D_ARABIC_HERO_TITLE_CLEARANCE.md
+- src/template.html
+- index.html
+
+Commit and push are intentionally excluded.

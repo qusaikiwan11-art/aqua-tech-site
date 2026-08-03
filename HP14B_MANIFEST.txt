@@ -1,0 +1,27 @@
+Aqua.Tech Homepage Batch HP-14B
+English Section Labels
+
+Purpose
+- Rename the methodology section label to the approved wording: Aqua.Tech Method.
+- Rename the trust section label to the approved wording: Why Aqua.Tech.
+- Keep both labels in English in Arabic and English page modes.
+- Preserve the section title, content, layout, HP-14 trust panel, and HP-14A marker alignment.
+
+Files
+- HP14B_MANIFEST.txt
+- docs/BATCH_HP_14B_METHOD_SECTION_LABEL.md
+- src/partials/overview.html
+- src/partials/about.html
+- js/site-i18n.js
+- index.html
+
+Required baseline
+- HP-14 committed at d013514
+- HP-14A applied and not yet committed
+
+Validation
+- npm run build
+- JavaScript syntax validation
+- Source and generated label checks
+- Arabic and English dictionaries use the exact same labels
+- Existing HP-14A CSS preserved

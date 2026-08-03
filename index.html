@@ -1578,6 +1578,14 @@
         text-shadow: 0 0 34px rgba(0, 180, 255, 0.16);
       }
 
+      @media (min-width: 561px) {
+        html[dir="rtl"] .aqua-hero-title-accent {
+          overflow: visible;
+          padding-block: 0.12em 0.08em;
+          margin-block: 0 -0.08em;
+        }
+      }
+
       .aqua-hero-subtitle {
         max-width: 610px;
         margin: 1.4rem 0 0;
@@ -1972,9 +1980,13 @@
           max-width: 100%;
           margin-inline: auto;
           overflow: visible;
-          padding-block: 0.1em 0.06em;
-          margin-block: -0.1em -0.06em;
+          padding-block: 0.24em 0.1em;
+          margin-block: -0.04em -0.1em;
           white-space: normal;
+        }
+
+        html[dir="rtl"] .aqua-hero-title > .aqua-hero-title-accent {
+          margin-block-start: 0.02em;
         }
 
         .aqua-hero-subtitle {
@@ -2289,7 +2301,7 @@
     <a
       href="#top"
       class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[9999] focus:px-4 focus:py-2 focus:bg-primary focus:text-on-primary focus:rounded-lg focus:font-semibold"
-      >تخطَّ إلى المحتوى الرئيسي</a
+      >تخطَ إلى المحتوى الرئيسي</a
     >
 
     <div id="consent-banner" role="region" aria-label="Privacy notice">
@@ -2364,21 +2376,21 @@
           <div class="aqua-hero-copy">
             <div class="aqua-hero-kicker">
               <span class="aqua-hero-status-dot" aria-hidden="true"></span>
-              <span data-i18n="hero.kicker">Software • Automation • AI</span>
+              <span data-i18n="hero.kicker">برمجيات • أتمتة • ذكاء اصطناعي</span>
             </div>
 
             <h1 id="hero-title" class="aqua-hero-title">
-              <span data-i18n="hero.title">نحوّل التعقيد</span>
+              <span data-i18n="hero.title">نحول التعقيد</span>
               <span
                 class="aqua-hero-title-accent"
                 data-i18n="hero.titleAccent"
-                >إلى تدفّق.</span
+                >إلى تدفق.</span
               >
             </h1>
 
             <p class="aqua-hero-subtitle" data-i18n="hero.subtitle">
               نبني مواقع وأنظمة وأتمتة ذكية تربط عملياتك وعملاءك ونموك ضمن
-              تدفّق رقمي واحد واضح وقابل للتوسّع.
+              تدفق رقمي واحد واضح وقابل للتوسع.
             </p>
 
             <div class="aqua-hero-actions">
@@ -2477,11 +2489,11 @@
   <div class="aqua-complexity-flow__container">
     <header class="aqua-complexity-flow__header">
       <span class="section-kicker" data-i18n="flow.kicker">
-       Aqua.Tech method
+        Aqua.Tech Method
       </span>
 
       <h2 id="complexityFlowTitle" data-i18n="flow.title">
-        كيف نحوّل التعقيد إلى تدفّق قابل للقياس
+        كيف نحول التعقيد إلى تدفق قابل للقياس
       </h2>
 
       <p data-i18n="flow.description">
@@ -2512,7 +2524,7 @@
           </li>
           <li>
             <span class="aqua-flow-signal-dot" aria-hidden="true"></span>
-            <span data-i18n="flow.before.item2">متابعة يدوية تعتمد على التذكّر</span>
+            <span data-i18n="flow.before.item2">متابعة يدوية تعتمد على التذكر</span>
           </li>
           <li>
             <span class="aqua-flow-signal-dot" aria-hidden="true"></span>
@@ -2531,7 +2543,7 @@
             <span class="aqua-flow-zone__eyebrow" data-i18n="flow.engine.kicker">
               Aqua Flow Method
             </span>
-            <h3 data-i18n="flow.engine.title">نحوّل المشكلة إلى نظام مترابط</h3>
+            <h3 data-i18n="flow.engine.title">نحول المشكلة إلى نظام مترابط</h3>
           </div>
 
           <span class="aqua-flow-engine__status">
@@ -2551,7 +2563,7 @@
           <li>
             <span class="aqua-flow-method__number">02</span>
             <div>
-              <h4 data-i18n="flow.step2.title">نصمّم</h4>
+              <h4 data-i18n="flow.step2.title">نصمم</h4>
               <p data-i18n="flow.step2.desc">نرتب الرحلة والبيانات والقرارات ضمن بنية واحدة.</p>
             </div>
           </li>
@@ -2559,14 +2571,14 @@
             <span class="aqua-flow-method__number">03</span>
             <div>
               <h4 data-i18n="flow.step3.title">نبني</h4>
-              <p data-i18n="flow.step3.desc">نحوّل البنية إلى موقع أو نظام أو أتمتة قابلة للتوسع.</p>
+              <p data-i18n="flow.step3.desc">نحول البنية إلى موقع أو نظام أو أتمتة قابلة للتوسع.</p>
             </div>
           </li>
           <li>
             <span class="aqua-flow-method__number">04</span>
             <div>
-              <h4 data-i18n="flow.step4.title">نقيس ونحسّن</h4>
-              <p data-i18n="flow.step4.desc">نتابع ما يعمل ونطوّر المسار بناءً على النتائج.</p>
+              <h4 data-i18n="flow.step4.title">نقيس ونحسن</h4>
+              <p data-i18n="flow.step4.desc">نتابع ما يعمل ونطور المسار بناءً على النتائج.</p>
             </div>
           </li>
         </ol>
@@ -2620,7 +2632,7 @@
             مؤشرات مرتبطة بهدف مشروعك، لا أرقام عامة
           </strong>
           <small class="aqua-flow-measurement__principle" data-i18n="flow.footer.value">
-            نبدأ من خط أساس حقيقي، ثم نقيس التحسّن ونطوّر المسار بالبيانات.
+            نبدأ من خط أساس حقيقي، ثم نقيس التحسن ونطور المسار بالبيانات.
           </small>
         </div>
       </div>
@@ -3312,7 +3324,7 @@
         </button>
 
         <div class="faq-a hidden mt-4 text-on-surface-variant leading-relaxed" data-i18n="faq.a7">
-          نعم، نسلّم الموقع أو النظام جاهزًا للاستخدام، مع شرح واضح لطريقة
+          نعم، نسلم الموقع أو النظام جاهزًا للاستخدام، مع شرح واضح لطريقة
           الإدارة والتحديثات الأساسية حسب طبيعة المشروع.
         </div>
       </div>

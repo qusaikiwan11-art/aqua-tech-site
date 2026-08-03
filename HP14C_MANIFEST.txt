@@ -1,0 +1,36 @@
+Aqua.Tech Homepage Batch HP-14C
+Remove Arabic Shadda
+
+Purpose
+- Remove the Arabic shadda character U+0651 from all active website copy.
+- Prevent the detached mark shown above Arabic letters in the current typography.
+- Preserve all Arabic letters, punctuation, layout, motion, and approved English section labels.
+
+Files
+- HP14B_MANIFEST.txt
+- HP14C_MANIFEST.txt
+- docs/BATCH_HP_14B_METHOD_SECTION_LABEL.md
+- docs/BATCH_HP_14C_REMOVE_ARABIC_SHADDA.md
+- 404.html
+- proposal-exact-overlay-template.html
+- src/template.html
+- src/partials/about.html
+- src/partials/consent.html
+- src/partials/faq.html
+- src/partials/hero.html
+- src/partials/overview.html
+- src/partials/services.html
+- js/site-i18n.js
+- index.html
+
+Required baseline
+- HP-14 committed at d013514
+- HP-14A applied and not yet committed
+- Existing HP-14B files may be either the first or corrected package state
+
+Validation
+- npm run build
+- JavaScript syntax validation
+- U+0651 absence check across all active website files
+- Aqua.Tech Method and Why Aqua.Tech dictionary checks
+- Existing HP-14A CSS preserved

@@ -1,0 +1,12 @@
+HP-14F — Footer copyright visibility
+
+Scope:
+- js/aqua-motion-system.js
+- docs/BATCH_HP_14F_FOOTER_COPYRIGHT_VISIBILITY.md
+
+Guarantees:
+- Keeps the footer content entrance motion.
+- Excludes the final copyright row from IntersectionObserver reveal state.
+- Restores persistent Arabic and English copyright visibility.
+- Preserves the current compact footer layout and translations.
+- Does not commit or push.

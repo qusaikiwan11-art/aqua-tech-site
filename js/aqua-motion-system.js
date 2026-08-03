@@ -51,7 +51,7 @@
   const uniqueItems = Array.from(new Set(motionItems));
 
   document
-    .querySelectorAll("footer > div > div")
+    .querySelectorAll(".aqua-site-footer__content")
     .forEach((group, index) => {
       group.dataset.aquaMotion = "rise";
       group.style.setProperty(

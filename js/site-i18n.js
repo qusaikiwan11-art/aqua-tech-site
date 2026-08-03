@@ -97,7 +97,7 @@
     "قرار مبني على نتيجة": "Result-driven decisions",
     "نركز على التحويل، سرعة الرد، وتنظيم العملاء بدل الزينة فقط.":
       "We focus on conversion, response speed, and customer organization instead of decoration only.",
-    "تخطَّ إلى المحتوى الرئيسي": "Skip to main content",
+    "تخطَ إلى المحتوى الرئيسي": "Skip to main content",
     "نستخدم Google Analytics لتحسين تجربتك. هل توافق؟":
       "We use Google Analytics to improve your experience. Do you agree?",
     قبول: "Accept",
@@ -179,7 +179,7 @@
     "تصميم موجه لرفع التحويل": "Conversion-focused design",
     "متوافقة مع الجوال + سرعة عالية": "Mobile-friendly and fast",
     "مواقع ومتاجر": "Websites and stores",
-    "نبني مواقع شركات ومتاجر وصفحات خدمات تركّز على الثقة والسرعة.":
+    "نبني مواقع شركات ومتاجر وصفحات خدمات تركز على الثقة والسرعة.":
       "We build company websites, stores, and service pages focused on trust and speed.",
     "استكشف المزيد": "Explore more",
     "الذكاء الاصطناعي": "Artificial intelligence",
@@ -212,7 +212,7 @@
       "A platform for organizing student projects, uploading files, tracking teams, and academic supervision.",
     "تنظيم الفرق": "Team organization",
     "متابعة التقييم": "Evaluation tracking",
-    "عمّان، الأردن": "Amman, Jordan",
+    "عمان، الأردن": "Amman, Jordan",
     "عمان، الأردن": "Amman, Jordan",
     "ماذا يحدث بعد ذلك؟": "What happens next?",
     "تحليل البيانات": "Data analysis",
@@ -224,7 +224,7 @@
     "عرض واضح": "Clear proposal",
     "نقدم خطة عمل مع التكلفة والجدول الزمني.":
       "We provide an action plan with cost and timeline.",
-    "نبني مواقع وأنظمة تركّز على جذب العملاء، استقبال الطلبات، والرد الأولي في مسار واضح وقابل للتنفيذ.":
+    "نبني مواقع وأنظمة تركز على جذب العملاء، استقبال الطلبات، والرد الأولي في مسار واضح وقابل للتنفيذ.":
       "We build websites and systems focused on attracting leads, receiving requests, and handling the first response through a clear, executable flow.",
     "الحلول الجاهزة": "Ready solutions",
     الأمان: "Security",
@@ -241,7 +241,7 @@
     "جاهزية لإضافة إعدادات Cloudflare و Security Headers.":
       "Ready to add Cloudflare and Security Headers.",
 
-    "نحوّل التقنية إلى تشغيل أوضح":
+    "نحول التقنية إلى تشغيل أوضح":
       "We turn technology into clearer operations",
 
     "Aqua.Tech وكالة برمجية تبني مواقع، أنظمة، وأتمتة تساعد الشركات ورواد الأعمال على تبسيط العمليات، رفع الكفاءة، وتحويل الحضور الرقمي إلى طلبات منظمة ونتائج قابلة للقياس.":
@@ -252,15 +252,15 @@
       "We start with the real problem, the audience, and how requests are received before any design or development.",
 
     "نبني المسار": "Build the flow",
-    "نحوّل الفكرة إلى صفحة، نظام، أو أتمتة لها خطوات واضحة ونتيجة قابلة للتنفيذ.":
+    "نحول الفكرة إلى صفحة، نظام، أو أتمتة لها خطوات واضحة ونتيجة قابلة للتنفيذ.":
       "We turn the idea into a page, system, or automation with clear steps and an executable outcome.",
 
     "نطلق بثقة": "Launch with confidence",
     "نجهز المشروع للإطلاق مع أساسيات الأداء، التتبع، الأمان، وتجربة المستخدم.":
       "We prepare the project for launch with performance, tracking, security, and user experience basics.",
 
-    "نحسّن بعد الإطلاق": "Improve after launch",
-    "نتابع النتائج والملاحظات لنطوّر الحل بدل أن يبقى مجرد نسخة أولى.":
+    "نحسن بعد الإطلاق": "Improve after launch",
+    "نتابع النتائج والملاحظات لنطور الحل بدل أن يبقى مجرد نسخة أولى.":
       "We follow results and feedback to improve the solution instead of leaving it as a first version.",
   };
 
@@ -278,10 +278,10 @@
       "nav.contact": "تواصل",
       "nav.start": "ابدأ مشروعك",
       "hero.kicker": "برمجيات • أتمتة • ذكاء اصطناعي",
-      "hero.title": "نحوّل التعقيد",
-      "hero.titleAccent": "إلى تدفّق.",
+      "hero.title": "نحول التعقيد",
+      "hero.titleAccent": "إلى تدفق.",
       "hero.subtitle":
-        "نبني مواقع وأنظمة وأتمتة ذكية تربط عملياتك وعملاءك ونموك ضمن تدفّق رقمي واحد واضح وقابل للتوسّع.",
+        "نبني مواقع وأنظمة وأتمتة ذكية تربط عملياتك وعملاءك ونموك ضمن تدفق رقمي واحد واضح وقابل للتوسع.",
       "hero.ctaPrimary": "ابدأ مشروعك",
       "hero.ctaSecondary": "استكشف كيف نعمل",
       "hero.proof1": "مواقع ومنصات",
@@ -289,28 +289,28 @@
       "hero.proof3": "أتمتة وذكاء اصطناعي",
       "hero.runtimeLabel": "Aqua Flow Engine",
       "hero.runtimeMeta": "مترابط • مؤتمت • قابل للقياس",
-      "flow.kicker": "منهج Aqua.Tech",
-      "flow.title": "كيف نحوّل التعقيد إلى تدفّق قابل للقياس",
+      "flow.kicker": "Aqua.Tech Method",
+      "flow.title": "كيف نحول التعقيد إلى تدفق قابل للقياس",
       "flow.description":
         "Aqua.Tech وكالة برمجية تبني مواقع وأنظمة وأتمتة تبدأ من مشكلة العمل الفعلية، ثم تربط التجربة والبيانات والتنفيذ في مسار واحد قابل للمتابعة والتحسين.",
       "flow.before.kicker": "قبل بناء الحل",
       "flow.before.title": "تعقيد يستهلك الوقت",
       "flow.before.item1": "طلبات موزعة بين قنوات مختلفة",
-      "flow.before.item2": "متابعة يدوية تعتمد على التذكّر",
+      "flow.before.item2": "متابعة يدوية تعتمد على التذكر",
       "flow.before.item3": "بيانات منفصلة يصعب الاستفادة منها",
       "flow.before.item4": "استجابة بطيئة ونتائج غير واضحة",
       "flow.engine.kicker": "Aqua Flow Method",
-      "flow.engine.title": "نحوّل المشكلة إلى نظام مترابط",
+      "flow.engine.title": "نحول المشكلة إلى نظام مترابط",
       "flow.engine.status": "مسار واضح",
       "flow.step1.title": "نفهم",
       "flow.step1.desc": "نحدد المشكلة والهدف ونقطة الاختناق الفعلية.",
-      "flow.step2.title": "نصمّم",
+      "flow.step2.title": "نصمم",
       "flow.step2.desc": "نرتب الرحلة والبيانات والقرارات ضمن بنية واحدة.",
       "flow.step3.title": "نبني",
       "flow.step3.desc":
-        "نحوّل البنية إلى موقع أو نظام أو أتمتة قابلة للتوسع.",
-      "flow.step4.title": "نقيس ونحسّن",
-      "flow.step4.desc": "نتابع ما يعمل ونطوّر المسار بناءً على النتائج.",
+        "نحول البنية إلى موقع أو نظام أو أتمتة قابلة للتوسع.",
+      "flow.step4.title": "نقيس ونحسن",
+      "flow.step4.desc": "نتابع ما يعمل ونطور المسار بناءً على النتائج.",
       "flow.after.kicker": "الأثر المتوقع",
       "flow.after.title": "نتائج نعمل على تحقيقها معك",
       "flow.after.item1.title": "تحويل أوضح",
@@ -326,10 +326,10 @@
       "flow.measurement.item3": "وضوح المتابعة",
       "flow.footer.label": "مبدأ القياس",
       "flow.footer.value":
-        "نبدأ من خط أساس حقيقي، ثم نقيس التحسّن ونطوّر المسار بالبيانات.",
+        "نبدأ من خط أساس حقيقي، ثم نقيس التحسن ونطور المسار بالبيانات.",
       "flow.cta": "استكشف ما نبنيه",
       "about.kicker": "About Aqua.Tech",
-      "about.title": "نحوّل التقنية إلى تشغيل أوضح",
+      "about.title": "نحول التقنية إلى تشغيل أوضح",
       "about.description":
         "Aqua.Tech وكالة برمجية تبني مواقع، أنظمة، وأتمتة تساعد الشركات ورواد الأعمال على تبسيط العمليات، رفع الكفاءة، وتحويل الحضور الرقمي إلى طلبات منظمة ونتائج قابلة للقياس.",
 
@@ -339,17 +339,17 @@
 
       "about.card2.title": "نبني المسار",
       "about.card2.desc":
-        "نحوّل الفكرة إلى صفحة، نظام، أو أتمتة لها خطوات واضحة ونتيجة قابلة للتنفيذ.",
+        "نحول الفكرة إلى صفحة، نظام، أو أتمتة لها خطوات واضحة ونتيجة قابلة للتنفيذ.",
 
       "about.card3.title": "نطلق بثقة",
       "about.card3.desc":
         "نجهز المشروع للإطلاق مع أساسيات الأداء، التتبع، الأمان، وتجربة المستخدم.",
 
-      "about.card4.title": "نحسّن بعد الإطلاق",
+      "about.card4.title": "نحسن بعد الإطلاق",
       "about.card4.desc":
-        "نتابع النتائج والملاحظات لنطوّر الحل بدل أن يبقى مجرد نسخة أولى.",
+        "نتابع النتائج والملاحظات لنطور الحل بدل أن يبقى مجرد نسخة أولى.",
 
-      "trust.kicker": "لماذا Aqua.Tech",
+      "trust.kicker": "Why Aqua.Tech",
       "trust.title": "لماذا تختار Aqua.Tech",
       "form.submit": "ابدأ مشروعك بخطة واضحة",
 
@@ -515,13 +515,13 @@
       "contact.socials": "حسابات التواصل",
 
       "services.kicker": "What we build",
-      "services.title": "خدمات رقمية تركّز على النمو",
+      "services.title": "خدمات رقمية تركز على النمو",
       "services.subtitle":
         "نغطي رحلة مشروعك من الفكرة إلى الإطلاق والنمو المستمر بحلول واضحة قابلة للتنفيذ.",
 
       "services.landing.title": "صفحات تسويقية",
       "services.landing.desc":
-        "صفحات سريعة وواضحة تساعدك تبدأ الإعلان، تجمع الطلبات، وتحوّل الزوار إلى عملاء محتملين.",
+        "صفحات سريعة وواضحة تساعدك تبدأ الإعلان، تجمع الطلبات، وتحول الزوار إلى عملاء محتملين.",
       "services.landing.tag1": "Landing page",
       "services.landing.tag2": "whatsapp",
       "services.landing.tag3": "Tracking",
@@ -544,7 +544,7 @@
 
       "services.systems.title": "أنظمة ولوحات تحكم مخصصة",
       "services.systems.desc":
-        "أنظمة داخلية، لوحات تحكم، وتكاملات API تنظّم العمليات وتوفر الوقت والتكلفة.",
+        "أنظمة داخلية، لوحات تحكم، وتكاملات API تنظم العمليات وتوفر الوقت والتكلفة.",
       "services.systems.tag1": "Dashboard",
       "services.systems.tag2": "API",
       "services.systems.tag3": "Workflow",
@@ -572,7 +572,7 @@
       "services.design.tag1": "UI/UX",
       "services.design.tag2": "Brand",
       "services.design.tag3": "Visuals",
-      "services.design.cta": "صمّم هويتك",
+      "services.design.cta": "صمم هويتك",
 
       "offers.kicker": "Launch offers",
       "offers.title": "عروض جاهزة للانطلاق",
@@ -650,7 +650,7 @@
 
       "faq.q7": "هل يشمل التسليم شرح تشغيل وإدارة الموقع؟",
       "faq.a7":
-        "نعم، نسلّم الموقع أو النظام جاهزًا للاستخدام، مع شرح واضح لطريقة الإدارة والتحديثات الأساسية حسب طبيعة المشروع.",
+        "نعم، نسلم الموقع أو النظام جاهزًا للاستخدام، مع شرح واضح لطريقة الإدارة والتحديثات الأساسية حسب طبيعة المشروع.",
 
       "faq.q8": "كيف تكون المتابعة أثناء التنفيذ؟",
       "faq.a8":
@@ -678,7 +678,7 @@
       "about.loop.1": "نفهم",
       "about.loop.2": "نبني",
       "about.loop.3": "نطلق",
-      "about.loop.4": "نحسّن",
+      "about.loop.4": "نحسن",
       "nav.support": "الدعم",
       "form.phone": "رقم الواتساب",
 
@@ -826,7 +826,7 @@
       "hero.proof3": "Automation and AI",
       "hero.runtimeLabel": "Aqua Flow Engine",
       "hero.runtimeMeta": "Connected • Automated • Measurable",
-      "flow.kicker": "The Aqua.Tech method",
+      "flow.kicker": "Aqua.Tech Method",
       "flow.title": "How we turn complexity into measurable flow",
       "flow.description":
         "Aqua.Tech is a software agency that builds websites, systems, and automation around the real operational problem, then connects experience, data, and execution in one flow that can be tracked and improved.",
